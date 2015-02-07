@@ -73,8 +73,8 @@ body {
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: green;
     background-color: transparent;
-    border: 1px solid transparent;
-    border-bottom-color: green;
+    border: 0;
+    border-bottom: 1px solid green;
     cursor: pointer;
 }
 .nav-tabs > li > a{
@@ -82,14 +82,13 @@ body {
     border: 0;
     border-bottom: 1px solid transparent;
     margin-right: 0px;
-    margin-left: 0px;
     border-radius: 0;
 }
-.nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
     color: green;
     background-color: transparent;
-    border: 1px solid transparent;
-    border-bottom-color: green;
+    border: 0;
+    border-bottom: 1px solid green;
     cursor: pointer;
 }
 
