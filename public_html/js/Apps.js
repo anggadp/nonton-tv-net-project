@@ -11,7 +11,8 @@ $(document).ready(function(){
             title: title,
             width: '100%',
             aspectratio: '16:9',
-            primary: 'flash'
+            autostart: 'true',
+            repeat: 'true'
         });
     };
 
