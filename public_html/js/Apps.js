@@ -28,7 +28,7 @@ $(document).ready(function(){
         });
     };
 
-    var CHANNELLIST =   
+    var cIND =   
     [   
         {   
             "id"   : "tvone",
@@ -44,7 +44,7 @@ $(document).ready(function(){
         }
     ];
     
-    var CHANNELLISTOTHER =   
+    var cOTHER =   
     [   
         {   
             "id"   : "other",
@@ -60,7 +60,7 @@ $(document).ready(function(){
         }
     ];
     
-    function CNLL(o){
+    function CNLL(o,ct){
         var CHANNELL = '';
         for (var i=0; i<o.length; i++)
         { 
@@ -72,15 +72,15 @@ $(document).ready(function(){
                         '</div>';
             CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i);
         }
-        $('#channel-list').empty().append(CHANNELL);
+        $('.cl-'+ct).empty().append(CHANNELL);
         $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
     };
     
     var CT = $('#channel-list').data('xyz');
     if (CT === "ind"){
-        CNLL(CHANNELLIST);
+        CNLL(cIND,CT);
     } else {
-        CNLL(CHANNELLISTOTHER);
+        CNLL(cOTHER,CT);
     }
 });
 
