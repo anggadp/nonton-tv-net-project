@@ -29,7 +29,7 @@ $(document).ready(function(){
     };
 
     var CHANNELLIST =   
-    [       
+    [   
         {   
             "id"   : "tvone",
             "name" : "TV One",        
@@ -43,9 +43,25 @@ $(document).ready(function(){
             "logo" : "http://upload.wikimedia.org/wikipedia/id/0/09/RCTI_MNC-Group.png"
         }
     ];
+    
+    var CHANNELLISTOTHER =   
+    [   
+        {   
+            "id"   : "other",
+            "name" : "Other TV",        
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
+            "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
+        }
+    ];
 
+    var CT = ('#channel-list').data('type');
+    if (CT === "ind"){
+        var o = CHANNELLIST;
+    } else {
+        var o = CHANNELLISTOTHER;
+    }
+    
     var CHANNELL = '';
-    var o = CHANNELLIST;
     for (var i=0; i<o.length; i++)
     { 
         CHANNELL += '<div class="channel-list-box clb-'+i+'">'+

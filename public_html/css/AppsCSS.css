@@ -30,6 +30,7 @@ body {
 .channel-list-box:active{
   background-color: #3a3a3a;
   color: #1a1a1a;
+  cursor: pointer;
 }
 .logo-img{
   position: relative;
