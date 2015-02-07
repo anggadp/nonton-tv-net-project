@@ -73,7 +73,7 @@ $(document).ready(function(){
     var CT = $('#channel-list').data('xyz');
     if (CT === "ind"){
         CNLL(CHANNELLIST);
-    } else {
+    } else if (CT === "other") {
         CNLL(CHANNELLISTOTHER);
     }
 });
