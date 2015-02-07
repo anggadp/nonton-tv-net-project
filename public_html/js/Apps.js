@@ -51,12 +51,6 @@ $(document).ready(function(){
             "name" : "Other TV",        
             "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
             "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
-        },
-        {   
-            "id"   : "other",
-            "name" : "Other TV",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
-            "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
         }
     ];
     
@@ -76,8 +70,12 @@ $(document).ready(function(){
         $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
     };
     
-    CNLL(cIND,'ind');
-    CNLL(cOTHER,'other');
+    var cg = { cIND : "ind", cOTHER : "other" };
+    for (var z in cg)
+        CNLL(z,cg[z]);
+    
+    //CNLL(cIND,'ind');
+    //CNLL(cOTHER,'other');
     
 });
 
