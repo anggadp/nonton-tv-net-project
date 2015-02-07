@@ -51,7 +51,7 @@ $(document).ready(function(){
         CHANNELL += '<div class="channel-list-box clb-'+i+'">'+
                         '<div class="logo-img"><img src="'+o[i]["logo"]+'" /></div>'+
                         '<div class="channel-list-desc">'+
-                                '<a href="##" class="clb-'+i+'"><h4>'+o[i]["name"]+'</h4></a>'+
+                                '<span class="nm clb-'+i+'">'+o[i]["name"]+'</span>'+
                         '</div>'+
                     '</div>';
         CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i);
