@@ -76,11 +76,8 @@ $(document).ready(function(){
         $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
     };
     
-    var CT = $('#channel-list').data('xyz');
-    if (CT === "ind"){
-        CNLL(cIND,CT);
-    } else {
-        CNLL(cOTHER,CT);
-    }
+    CNLL(cIND,'ind');
+    CNLL(cOTHER,'other');
+    
 });
 
