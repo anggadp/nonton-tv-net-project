@@ -16,7 +16,7 @@ $(document).ready(function(){
         });
     };
 
-    function CLICKCHNELLIST(id,url,logo,name,i){
+    function CLICKCHNELLIST(id,url,logo,name,i,ct){
         $.ajax({
             success: function(){
                 $('.clb-'+i).click(function(){
@@ -64,16 +64,16 @@ $(document).ready(function(){
         var CHANNELL = '';
         for (var i=0; i<o.length; i++)
         { 
-            CHANNELL += '<div class="channel-list-box clb-'+i+'">'+
+            CHANNELL += '<div class="channel-list-box clb-'+ct+'-'+i+'">'+
                             '<div class="logo-img"><img src="'+o[i]["logo"]+'" /></div>'+
                             '<div class="channel-list-desc">'+
-                                    '<span class="nm clb-'+i+'">'+o[i]["name"]+'</span>'+
+                                    '<span class="nm clb-'+ct+'-'+i+'">'+o[i]["name"]+'</span>'+
                             '</div>'+
                         '</div>';
-            CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i);
+            CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i,ct);
         }
         $('.cl-'+ct).empty().append(CHANNELL);
-        $('#rcti').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
+        $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
     };
     
     CNLL(cIND,'ind');
