@@ -53,26 +53,28 @@ $(document).ready(function(){
             "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
         }
     ];
-
+    
+    function CNLL(o){
+        var CHANNELL = '';
+        for (var i=0; i<o.length; i++)
+        { 
+            CHANNELL += '<div class="channel-list-box clb-'+i+'">'+
+                            '<div class="logo-img"><img src="'+o[i]["logo"]+'" /></div>'+
+                            '<div class="channel-list-desc">'+
+                                    '<span class="nm clb-'+i+'">'+o[i]["name"]+'</span>'+
+                            '</div>'+
+                        '</div>';
+            CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i);
+        }
+        $('#channel-list').empty().append(CHANNELL);
+        $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
+    };
+    
     var CT = $('#channel-list').data('xyz');
     if (CT === "ind"){
-        var o = CHANNELLIST;
+        CNLL(CHANNELLIST);
     } else {
-        var o = CHANNELLISTOTHER;
+        CNLL(CHANNELLISTOTHER);
     }
-    
-    var CHANNELL = '';
-    for (var i=0; i<o.length; i++)
-    { 
-        CHANNELL += '<div class="channel-list-box clb-'+i+'">'+
-                        '<div class="logo-img"><img src="'+o[i]["logo"]+'" /></div>'+
-                        '<div class="channel-list-desc">'+
-                                '<span class="nm clb-'+i+'">'+o[i]["name"]+'</span>'+
-                        '</div>'+
-                    '</div>';
-        CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i);
-    }
-    $('#channel-list').empty().append(CHANNELL);
-    $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
 });
 
