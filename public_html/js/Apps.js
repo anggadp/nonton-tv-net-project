@@ -30,38 +30,28 @@ $(document).ready(function(){
 
     var CHANNELLIST =   
     [   
-        [
-            {   
-                "id"   : "tvone",
-                "name" : "TV One",        
-                "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
-                "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
-            },
-            {   
-                "id"   : "rcti",
-                "name" : "RCTI",        
-                "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///rcti2",
-                "logo" : "http://upload.wikimedia.org/wikipedia/id/0/09/RCTI_MNC-Group.png"
-            }
-        ]
-        [
-            {   
-                "id"   : "tvone",
-                "name" : "TV One",        
-                "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
-                "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
-            },
-            {   
-                "id"   : "rcti",
-                "name" : "RCTI",        
-                "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///rcti2",
-                "logo" : "http://upload.wikimedia.org/wikipedia/id/0/09/RCTI_MNC-Group.png"
-            }
-        ]
+        {   
+            "id"   : "tvone",
+            "name" : "TV One",        
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
+            "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
+        },
+        {   
+            "id"   : "rcti",
+            "name" : "RCTI",        
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///rcti2",
+            "logo" : "http://upload.wikimedia.org/wikipedia/id/0/09/RCTI_MNC-Group.png"
+        }
     ];
     
     var CHANNELLISTOTHER =   
     [   
+        {   
+            "id"   : "other",
+            "name" : "Other TV",        
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
+            "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
+        },
         {   
             "id"   : "other",
             "name" : "Other TV",        
@@ -89,7 +79,7 @@ $(document).ready(function(){
     var CT = $('#channel-list').data('xyz');
     if (CT === "ind"){
         CNLL(CHANNELLIST);
-    } else if (CT === "other") {
+    } else {
         CNLL(CHANNELLISTOTHER);
     }
 });
