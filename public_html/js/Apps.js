@@ -19,7 +19,7 @@ $(document).ready(function(){
     function CLICKCHNELLIST(id,url,logo,name,i,ct){
         $.ajax({
             success: function(){
-                $('.clb-'+i).click(function(){
+                $('.clb-'+ct+'-'+i).click(function(){
                     //JWPLAYER(url,logo,name);
                     $('#'+id).html(JWPLAYER(url,logo,name,id));
                     //alert("Hoi");
