@@ -82,12 +82,10 @@ body {
     border: 0;
     border-bottom: 1px solid transparent;
     margin-right: 0px;
+    margin-left: 0px;
     border-radius: 0;
 }
 .nav-tabs > li > a:hover {
     background-color: transparent;
-}
-.nav-tabs > li:hover {
-    margin-bottom: -1px;
 }
 
