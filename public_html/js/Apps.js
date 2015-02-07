@@ -54,8 +54,7 @@ $(document).ready(function(){
         }
     ];
 
-    var CT = ('#channel-list').data('xyz');
-    alert(CT);
+    var CT = $('#channel-list').data('xyz');
     if (CT === "ind"){
         var o = CHANNELLIST;
     } else {
