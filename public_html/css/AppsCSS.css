@@ -87,5 +87,6 @@ body {
 .nav-tabs > li > a:hover {
     background-color: transparent;
     border-bottom-color: yellowgreen;
+    margin-bottom: -1px;
 }
 
