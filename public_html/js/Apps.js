@@ -70,7 +70,6 @@ $(document).ready(function(){
                         '</div>';
             CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i,ct);
         }
-        CNLON();
         $('.cl-'+ct).empty().append(CHANNELL);
         $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
     };
