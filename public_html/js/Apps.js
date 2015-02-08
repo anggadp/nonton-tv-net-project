@@ -145,9 +145,11 @@ $(document).ready(function(){
                             '</div>'+
                         '</div>';
             CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i,ct);
+            if (o[i]["id"]==='net')
+                $('#net').html(JWPLAYER(o[i]["url"],o[i]["logo"],o[i]["name"],o[i]["id"]));
         }
         $('.cl-'+ct).empty().append(CHANNELL);
-        $('#net').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
+        
     };
     
     CNLL(cIND,'ind');
