@@ -68,7 +68,6 @@ body {
   height: 405.4px;
   max-height: 405.4px;
   border-bottom: 1px solid #e8e8e8;
-  width: 37%;
   color: #b8b8b8;
   padding: 0px;
   float: left;
@@ -89,8 +88,17 @@ body {
 
 .col-player{
   padding: 0px;
-  width: 63%;
 }
+
+@media (min-width: 992px) {
+    .col-player{
+        width: 63%;
+    }
+    .col-channel-list{
+        width: 37%;
+    }
+}
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: green;
     background-color: transparent;
