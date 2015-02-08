@@ -3,14 +3,6 @@
  * and open the template in the editor.
  */
 $(document).ready(function(){
-    
-    function CNLON(){
-        $('.channel-list-box').click(function() {
-            $('.channel-list-box').removeClass();
-            $(this).parent().addClass('on');
-        });
-    };
-    
     function JWPLAYER(file,image,title,id){
         $('#player-area').empty().append('<div id="'+id+'"></div>');
         jwplayer(id).setup({
@@ -30,6 +22,8 @@ $(document).ready(function(){
                 $('.clb-'+ct+'-'+i).click(function(){
                     //JWPLAYER(url,logo,name);
                     $('#'+id).html(JWPLAYER(url,logo,name,id));
+                    $('.channel-list-box').removeClass('on');
+                    $(this).addClass('on');
                     //alert("Hoi");
                 });
             }
