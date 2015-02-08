@@ -3,6 +3,12 @@
  * and open the template in the editor.
  */
 $(document).ready(function(){
+    var selector = '.channel-list-box';
+    $(selector).on('click', function(){
+        $(selector).removeClass('on');
+        $(this).addClass('on');
+    });
+    
     function JWPLAYER(file,image,title,id){
         $('#player-area').empty().append('<div id="'+id+'"></div>');
         jwplayer(id).setup({
@@ -56,9 +62,12 @@ $(document).ready(function(){
     
     function CNLL(o,ct){
         var CHANNELL = '';
+        var on = '';
         for (var i=0; i<o.length; i++)
         { 
-            CHANNELL += '<div class="channel-list-box clb-'+ct+'-'+i+'">'+
+            if (i===0)
+                on = 'on';
+            CHANNELL += '<div class="channel-list-box '+on+' clb-'+ct+'-'+i+'">'+
                             '<div class="logo-img"><img src="'+o[i]["logo"]+'" /></div>'+
                             '<div class="channel-list-desc">'+
                                     '<span class="nm clb-'+ct+'-'+i+'">'+o[i]["name"]+'</span>'+

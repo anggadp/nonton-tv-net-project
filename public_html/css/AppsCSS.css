@@ -32,6 +32,11 @@ body {
   color: #1a1a1a;
   cursor: pointer;
 }
+.channel-list-box.on{
+  background-color: #3a3a3a;
+  color: #1a1a1a;
+  cursor: none;
+}
 .logo-img{
   position: relative;
   width: 80px;
