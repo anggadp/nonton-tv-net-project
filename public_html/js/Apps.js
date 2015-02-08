@@ -28,7 +28,9 @@ $(document).ready(function(){
         });
     };
 
-    var cIND =   
+    var cIND =  
+{
+    "ind" :        
     [   
         {   
             "id"   : "tvone",
@@ -42,7 +44,17 @@ $(document).ready(function(){
             "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///rcti2",
             "logo" : "http://upload.wikimedia.org/wikipedia/id/0/09/RCTI_MNC-Group.png"
         }
-    ];
+    ],
+    "other" :
+    [   
+        {   
+            "id"   : "other",
+            "name" : "Other TV",        
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
+            "logo" : "http://opajappy.com/wp-content/uploads/2014/06/LOGO-tvOne-New-2012.jpeg"
+        }
+    ]
+};
     
     var cOTHER =   
     [   
@@ -70,9 +82,8 @@ $(document).ready(function(){
         $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
     };
     
-    var cg = { cIND : "ind", cOTHER : "other" };
-    for (var z in cg)
-        CNLL(z,cg[z]);
+    for (var z in cIND)
+        CNLL(cIND[z],z);
     
     //CNLL(cIND,'ind');
     //CNLL(cOTHER,'other');
