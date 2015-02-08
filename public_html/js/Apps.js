@@ -3,11 +3,13 @@
  * and open the template in the editor.
  */
 $(document).ready(function(){
-    var selector = '.channel-list-box';
-    $(selector).on('click', function(){
-        $(selector).removeClass('on');
-        $(this).addClass('on');
-    });
+    
+    function CNLON(){
+        $('.channel-list-box').click(function() {
+            $('.channel-list-box').removeClass();
+            $(this).parent().addClass('on');
+        });
+    };
     
     function JWPLAYER(file,image,title,id){
         $('#player-area').empty().append('<div id="'+id+'"></div>');
@@ -74,6 +76,7 @@ $(document).ready(function(){
                         '</div>';
             CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i,ct);
         }
+        CNLON();
         $('.cl-'+ct).empty().append(CHANNELL);
         $('#tvone').html(JWPLAYER(o[0]["url"],o[0]["logo"],o[0]["name"],o[0]["id"]));
     };
