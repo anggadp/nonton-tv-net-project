@@ -65,8 +65,8 @@ $(document).ready(function(){
         var on = '';
         for (var i=0; i<o.length; i++)
         { 
-            if (i===0)
-                on = 'on';
+            if (o[i]["id"]==='tvone') on += 'on';
+            
             CHANNELL += '<div class="channel-list-box '+on+' clb-'+ct+'-'+i+'">'+
                             '<div class="logo-img"><img src="'+o[i]["logo"]+'" /></div>'+
                             '<div class="channel-list-desc">'+
