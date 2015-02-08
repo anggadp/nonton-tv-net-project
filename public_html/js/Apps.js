@@ -62,10 +62,9 @@ $(document).ready(function(){
     
     function CNLL(o,ct){
         var CHANNELL = '';
-        var on = '';
         for (var i=0; i<o.length; i++)
         { 
-            if (o[i]["id"]==='tvone') on += 'on';
+            if (o[i]["id"]==='tvone') var on = 'on'; else var on = '';
             
             CHANNELL += '<div class="channel-list-box '+on+' clb-'+ct+'-'+i+'">'+
                             '<div class="logo-img"><img src="'+o[i]["logo"]+'" /></div>'+
