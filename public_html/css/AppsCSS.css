@@ -63,6 +63,7 @@ body {
   cursor: pointer;
 }
 .col-channel-list{
+  position: relative;
   background-color: #1a1a1a;
   height: 397.1px;
   max-height: 397.1px;
@@ -71,7 +72,23 @@ body {
   color: #b8b8b8;
   overflow-y: auto;
   padding: 0px;
+  float: left;
 }
+
+.col-channel-list .panel-tab-data {
+    position: relative;
+    float: left;
+    height: 397.1px;
+    max-height: 397.1px;
+}
+
+.col-channel-list .panel-tab-data .tab-content {
+    position: relative;
+    float: left;
+    height: 100%;
+    overflow-y:auto;
+}
+
 .col-player{
   padding-right: 0px;
   width: 63%;
