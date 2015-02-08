@@ -46,8 +46,8 @@ body {
   background-color: #000000;
 }
 .logo-img img{
-  width: 70%;
-  height: 40%;
+  max-width: 70%;
+  max-height: 60%;
   position: absolute;
   top: 0;
   bottom: 0;
