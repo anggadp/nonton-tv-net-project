@@ -65,9 +65,7 @@ body {
 .col-channel-list{
   position: relative;
   background-color: #1a1a1a;
-  height: 405.4px;
-  max-height: 405.4px;
-  border-bottom: 1px solid #e8e8e8;
+  height: 403.5px;
   color: #b8b8b8;
   padding: 0px;
 }
@@ -82,7 +80,7 @@ body {
 .col-channel-list .panel-tab-data .tab-content {
     position: relative;
     float: left;
-    height: 89.5%;
+    height: 89.6%;
     overflow-y:auto;
     width: 100%;
 }
