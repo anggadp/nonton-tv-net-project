@@ -155,5 +155,9 @@ $(document).ready(function(){
     CNLL(cIND,'ind');
     CNLL(cOTHER,'other');
     
+    $('#adver').click(function(){
+        $('#myModalAdvertising').modal('show');
+    });
+    
 });
 

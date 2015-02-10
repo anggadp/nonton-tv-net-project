@@ -70,7 +70,6 @@ body {
   border-bottom: 1px solid #e8e8e8;
   color: #b8b8b8;
   padding: 0px;
-  float: left;
 }
 
 .col-channel-list .panel-tab-data {
@@ -106,6 +105,81 @@ body {
     }
 }
 
+/* ADVERTISE */
+.adv-pa {
+    padding: 5px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    margin-right: 10px; 
+}
+.adv-pa-content {
+    background-color: #d5d5d5;
+    text-align: center;
+    position: relative;
+    margin: 5px;
+    color: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .adv-pa {
+        width: 63%;
+    }
+    .adv-pa-content {
+        height: 100px;
+        width: 98.3%;
+        float: left;
+    }
+    .adv-pa-content embed {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.adv-sb {
+    padding: 5px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+}
+.adv-sb-content {
+    background-color: #a5a5a5;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5px;
+    color: #ffffff;
+    margin: 5px;
+}
+
+@media (min-width: 992px) {
+    .adv-sb {
+        width: 36%;
+    }
+    .adv-sb-content {
+        height: 205px;
+        width: 47%;
+        float: left;
+    }
+    .adv-sb-content embed {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     color: green;
     background-color: transparent;
@@ -127,4 +201,39 @@ body {
     border-bottom: 1px solid green;
     cursor: pointer;
 }
+.navbar-nav > li > button {
+    margin: 7px 5px;
+}
 
+.modal-header {
+    background-color: #1a1a1a;
+    padding: 7px 10px;
+    color: #f5f5f5;
+    border-bottom: 2px solid green;
+}
+
+.modal-footer {
+    background-color: #f5f5f5;
+    padding: 5px 20px;
+}
+
+.modal-header .close {
+    margin-top: 1px;
+    background-color: #f5f5f5;
+    padding: 5px;
+}
+
+.modal-dialog {
+    width: 600px;
+    margin: 150px auto;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #000000;
+}
