@@ -129,22 +129,17 @@ body {
         width: 99.5%;
         float: left;
     }
-    /*
-    .adv-pa-content embed {
-        max-width: 100%;
-        max-height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-    */
-    .adv-pa-content embed {
-        max-width: 100%;
-        max-height: 100%;
-    }
+}
+
+.adv-pa-content embed {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .adv-sb {
@@ -172,16 +167,17 @@ body {
         width: 49%;
         float: left;
     }
-    .adv-sb-content embed {
-        max-width: 100%;
-        max-height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
+}
+
+.adv-sb-content embed {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
