@@ -9,7 +9,7 @@ $(document).ready(function(){
     var ADSPA = [
         {
             'id'    : '1',
-            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan710x100copy.jpg">',
+            'cd'    : '<a href=""><embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan710x100copy.jpg"></a>',
             'exdt'  : '2050-02-9'
         },
         {
@@ -32,7 +32,7 @@ $(document).ready(function(){
     var ADSSB = [
         {
             'id'    : '1',
-            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan200x200.jpg">',
+            'cd'    : '<a href=""><embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan200x200.jpg"></a>',
             'exdt'  : '2050-02-9'
         },
         {
