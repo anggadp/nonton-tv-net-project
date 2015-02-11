@@ -105,7 +105,7 @@ body {
 
 /* ADVERTISE */
 .adv-pa {
-    padding: 5px;
+    padding: 2px;
     position: relative;
     background-color: #fff;
     border: 1px solid;
@@ -116,7 +116,7 @@ body {
     background-color: #d5d5d5;
     text-align: center;
     position: relative;
-    margin: 5px;
+    margin: 2px;
     color: #ffffff;
 }
 
@@ -126,7 +126,7 @@ body {
     }
     .adv-pa-content {
         height: 100px;
-        width: 98.3%;
+        width: 99.5%;
         float: left;
     }
     .adv-pa-content embed {
@@ -142,7 +142,7 @@ body {
 }
 
 .adv-sb {
-    padding: 5px;
+    padding: 2px;
     position: relative;
     background-color: #fff;
     border: 1px solid;
@@ -154,7 +154,7 @@ body {
     position: relative;
     margin-bottom: 5px;
     color: #ffffff;
-    margin: 5px;
+    margin: 2px;
 }
 
 @media (min-width: 992px) {
@@ -163,7 +163,7 @@ body {
     }
     .adv-sb-content {
         height: 205px;
-        width: 47.4%;
+        width: 49%;
         float: left;
     }
     .adv-sb-content embed {
