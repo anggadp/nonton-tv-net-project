@@ -9,7 +9,7 @@ $(document).ready(function(){
     var ADSPA = [
         {
             'id'    : '1',
-            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan710x100.jpg">',
+            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan710x100copy.jpg">',
             'exdt'  : '2050-02-9'
         },
         {
