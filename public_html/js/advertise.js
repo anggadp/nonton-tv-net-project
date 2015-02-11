@@ -9,7 +9,7 @@ $(document).ready(function(){
     var ADSPA = [
         {
             'id'    : '1',
-            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklancopy.jpg">',
+            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan710x100.jpg">',
             'exdt'  : '2050-02-9'
         },
         {
@@ -87,7 +87,7 @@ $(document).ready(function(){
             if (ct === 'sb')
                 var sz = '<h1>200 x 200</h1>';
             else
-                var sz = '<h3>718 x 100</h3>';
+                var sz = '<h3>710 x 100</h3>';
             
             var d = new Date();
             var hasil = CalculateDate(o[i]["exdt"],d.yyyymmdd());
