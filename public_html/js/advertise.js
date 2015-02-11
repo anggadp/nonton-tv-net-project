@@ -9,8 +9,8 @@ $(document).ready(function(){
     var ADSPA = [
         {
             'id'    : '1',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
+            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklancopy.jpg">',
+            'exdt'  : '2050-02-9'
         },
         {
             'id'    : '2',
@@ -32,8 +32,8 @@ $(document).ready(function(){
     var ADSSB = [
         {
             'id'    : '1',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
+            'cd'    : '<embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan200x200.jpg">',
+            'exdt'  : '2050-02-9'
         },
         {
             'id'    : '2',
