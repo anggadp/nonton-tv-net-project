@@ -37,7 +37,7 @@ $(document).ready(function(){
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/Net-TV-dan-KPI-1-480x300.png"
         },
         {   
-            "id"   : "tvone",
+            "id"   : "tvonejkt",
             "name" : "TV One",        
             "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/TvOne_Logo28201129.png"
