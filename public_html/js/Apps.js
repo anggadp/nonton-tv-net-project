@@ -39,61 +39,61 @@ $(document).ready(function(){
         {   
             "id"   : "tvonejkt",
             "name" : "TV One",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///tvone2_240p",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/tvone2_240p",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/TvOne_Logo28201129.png"
         },
         {   
             "id"   : "rcti",
             "name" : "RCTI",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///rcti2",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/rcti2",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/rcti.png"
         },
         {   
             "id"   : "mnc",
             "name" : "MNC TV",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///mnctv2",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/mnctv2",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/MNCTV_MNC-Group.png"
         },        
         {   
             "id"   : "transtv",
             "name" : "Trans TV",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///transtv2_240p",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/transtv2_240p",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/Logo_Trans_TV.png"
         },
         {   
             "id"   : "trans7",
             "name" : "Trans 7",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///trans72",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/trans72",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/Logo_Trans7.png"
         },
         {   
             "id"   : "sctv",
             "name" : "SCTV",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///sctv2",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/sctv2",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/20110218143118!SCTV_Logo.png"
         },
         {   
             "id"   : "metrotv",
             "name" : "Metro TV",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///metrotv2_240p",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/metrotv2_240p",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/metrotv.png"
         },
         {   
             "id"   : "globaltv",
             "name" : "Global TV",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///globaltv2",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/globaltv2",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/Logo_Global_TV_2012.png"
         },
         {   
             "id"   : "indosiar",
             "name" : "INDOSIAR",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///indosiar2_240p",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/indosiar2_240p",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/INDOSIAR_Logo.png"
         },
         {   
             "id"   : "antv",
             "name" : "ANTV",        
-            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt///antv2_240p",
+            "url"  : "rtmp://cdnjkt.mivo.tv/mivotvjkt/antv2_240p",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/antv.png"
         },
         {   
