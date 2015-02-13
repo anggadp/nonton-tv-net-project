@@ -21,11 +21,12 @@ and open the template in the editor.
         <script type="text/javascript" src="http://jwpsrv.com/library/kql8FKhPEeSPgxJtO5t17w.js"></script>
         <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/Apps.js"></script>
         <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/advertise.js"></script>
+        
     </head>
     <body>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-default navbar-fixed-top navbar-blog" role="navigation">
-          <div class="container">
+          <div class="container navbar-cont">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -33,12 +34,13 @@ and open the template in the editor.
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-                <a class="navbar-brand logo-nav" href=""></a>
+                <a class="navbar-brand logo-nav" href="/"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Home</a></li>
-                <li><button id="adver" class="btn btn-warning">Advertising</button></li>
+                <li><a href="#">Statistic</a></li>
+                <li><button id="adver" class="btn btn-warning">Advertise</button></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -52,13 +54,13 @@ and open the template in the editor.
                 <div class="panel-tab-data">
                     <ul id="myTab" class="nav nav-tabs tab-cannel">
                         <li class="indtv active"><a href="#indtv" data-toggle="tab">Indonesia</a></li>
-                        <li class="koreatv"><a href="#koreatv" data-toggle="tab">Korea</a></li>
                         <li class="sporttv"><a href="#sporttv" data-toggle="tab">Sport</a></li>
                         <li class="kidtv"><a href="#kidtv" data-toggle="tab">Kids</a></li>
-                        <li class="adulttv"><a href="#adulttv" data-toggle="tab">18+</a></li>
+                        <li class="adulttv" data-xyz="0"><a href="#adulttv" data-toggle="tab">18+</a></li>
+                        <li class="koreatv"><a href="#koreatv" data-toggle="tab">Korea</a></li>
                         <li class="othertv"><a href="#othertv" data-toggle="tab">Others</a></li>
                     </ul>
-                    <div class="tab-content">
+                    <div id="myTabContentChannel" class="tab-content">
                         <div class="tab-pane active" id="indtv">
                             <div id="channel-list" class="cl-ind"></div>
                         </div>
@@ -99,6 +101,22 @@ and open the template in the editor.
             </div>
         </div> <!-- /container -->
         
+        <div class="container footer">
+            <div class="col-md-2 footer-logo" href="/"></div>
+            <div class="col-md-8 footer-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Creators</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Send Feedback</a></li>
+            </div>
+            <div class="col-md-12 footer-desc">
+                <a href="#">Privacy</a> 
+                <a href="#">Policy & Safety</a> 
+                <span>&copy; 2015 NontonTVNet</span>
+            </div>
+        </div>
+        
         <!-- MODAL ADVERTISING -->
         <div class="modal fade" id="myModalAdvertising" aria-hidden="true" data-backdrop="true" data-toggle="modal">
             <div class="modal-dialog">
@@ -113,6 +131,26 @@ and open the template in the editor.
                             <dt><span class="glyphicon glyphicon-envelope"></span></dt><dd>nontontv2013@gmail.com</dd>
                             <dt><span class="glyphicon glyphicon-phone-alt"></span></dt><dd>+6282361282828</dd>
                         </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <span>Regards, <b>Administrator</b></span>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal -->
+        
+        <!-- MODAL WARNING 18+ -->
+        <div class="modal fade" id="myModal18" aria-hidden="true" data-backdrop="true" data-toggle="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close" data-dismiss="modal">×</span>
+                        <h4 class="modal-title">WARNING</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-warning">
+                            <strong>Warning!</strong> This content only for <strong>18+</strong> years old.
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <span>Regards, <b>Administrator</b></span>

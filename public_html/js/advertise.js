@@ -11,21 +11,6 @@ $(document).ready(function(){
             'id'    : '1',
             'cd'    : '<a href=""><embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan710x100copy.jpg"></a>',
             'exdt'  : '2050-02-9'
-        },
-        {
-            'id'    : '2',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
-        },
-        {
-            'id'    : '3',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
-        },
-        {
-            'id'    : '4',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
         }
     ];
     
@@ -34,21 +19,6 @@ $(document).ready(function(){
             'id'    : '1',
             'cd'    : '<a href=""><embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan200x200.jpg"></a>',
             'exdt'  : '2050-02-9'
-        },
-        {
-            'id'    : '2',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
-        },
-        {
-            'id'    : '3',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
-        },
-        {
-            'id'    : '4',
-            'cd'    : '',
-            'exdt'  : '2015-02-9'
         }
     ];
     

@@ -3,7 +3,19 @@
  * and open the template in the editor.
  */
 $(document).ready(function(){
-    function JWPLAYER(file,image,title,id){
+    var urlDelimiter = '#q=';
+    function URLSplitUtama(a){
+        var url = location.href;
+        var Split = url.split(urlDelimiter);
+        return Split[a];
+    };
+    
+    function UrlSplitSecond(url,a){
+        var Sp = url.split('/');
+        return Sp[a];
+    };
+    
+    function VIDEOJS(file,image,title,id){
         $('#player-area').empty().append('<div id="'+id+'"></div>');
         jwplayer(id).setup({
             file : file,
@@ -16,11 +28,12 @@ $(document).ready(function(){
         });
     };
 
-    function CLICKCHNELLIST(id,url,logo,name,i,ct){
+    function CLICKCHNELLIST(id,url,logo,name,i,ct,o){
         $.ajax({
             success: function(){
                 $('.clb-'+ct+'-'+i).click(function(){
-                    $('#'+id).html(JWPLAYER(url,logo,name,id));
+                    window.history.pushState({ foo: "bar" },"", '//'+document.domain+urlDelimiter+ct+'/'+i);
+                    $('#'+id).html(VIDEOJS(url,logo,name,id));
                     $('.channel-list-box').removeClass('on');
                     $(this).addClass('on');
                 });
@@ -111,7 +124,7 @@ $(document).ready(function(){
         {   
             "id"   : "sindotv",
             "name" : "Sindo TV",        
-            "url"  : "rtmp://edge.okeinfo.net/live/mncoke4_256.stream",
+            "url"  : "rtmp://edge.okeinfo.net/live/mncoke4_512.stream",
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/sindotv.jpg"
         },
         {   
@@ -251,12 +264,6 @@ $(document).ready(function(){
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/iconcopy400.png"
         },
         {
-            "id"   : "adult9",
-            "name" : "Okadai TV",        
-            "url"  : "",
-            "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/iconcopy400.png"
-        },
-        {
             "id"   : "adult10",
             "name" : "Hot Movie TV",        
             "url"  : "rtmp://edge2.everyon.tv/etv2/phd511",
@@ -390,6 +397,7 @@ $(document).ready(function(){
     
     function CNLL(o,ct){
         var CHANNELL = '';
+        
         for (var i=0; i<o.length; i++)
         { 
             if (o[i]["id"]==='net') var on = 'on'; else var on = '';
@@ -400,13 +408,39 @@ $(document).ready(function(){
                                     '<span class="nm clb-'+ct+'-'+i+'">'+o[i]["name"]+'</span>'+
                             '</div>'+
                         '</div>';
-            CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i,ct);
-            if (o[i]["id"]==='net')
-                $('#net').html(JWPLAYER(o[i]["url"],o[i]["logo"],o[i]["name"],o[i]["id"]));
+            CLICKCHNELLIST(o[i]["id"],o[i]["url"],o[i]["logo"],o[i]["name"],i,ct,o);
+            
+            if (URLSplitUtama(1) !== undefined){
+                var h = UrlSplitSecond(URLSplitUtama(1),0);
+                var ii = UrlSplitSecond(URLSplitUtama(1),1);
+                if (ii == i && ct === h){
+                    VIDEOJS(o[i]["url"],o[i]["logo"],o[i]["name"],o[i]["id"]);
+                }
+            }
+            
         }
         $('.cl-'+ct).empty().append(CHANNELL);
         
+        if (URLSplitUtama(1) === undefined){
+            VIDEOJS(cIND[0]["url"],cIND[0]["logo"],cIND[0]["name"],cIND[0]["id"]);
+        } else {
+            
+            $('.channel-list-box').removeClass('on');
+            $('.clb-'+h+'-'+ii).addClass('on');
+            $('.clb-'+h+'-'+ii).focus();
+            $('#myTab li').removeClass('active');
+            $('.'+h+'tv').addClass('active');
+            $('#myTabContentChannel .tab-pane').removeClass('active');
+            $('#myTabContentChannel #'+h+'tv').addClass('active');
+        }
     };
+    
+    
+        
+    
+    $('.adulttv').click(function(){ 
+        if ($('.adulttv').data('xyz') === 0){ $(this).data('xyz','1'); $('#myModal18').modal('show'); }  
+    });
     
     CNLL(cIND,'ind');
     CNLL(cKOREA,'korea');
