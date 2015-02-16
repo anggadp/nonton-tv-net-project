@@ -32,6 +32,7 @@ body {
   border-bottom: 1px solid #e8e8e8;
   -webkit-box-shadow: none;
 	box-shadow: none;
+  max-height: 51px;
 }
 .channel-list-box{
   position: relative;
@@ -53,6 +54,7 @@ body {
   color: #1a1a1a;
   cursor: default;
 }
+
 .logo-img{
   position: relative;
   width: 80px;
@@ -77,6 +79,37 @@ body {
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.channel-list-desc .nm:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.sv {
+    font-size: 11px;
+    margin: 2px 0 5px; 
+    cursor: pointer;
+    padding: 1px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    margin-top: 3px;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+}
+.sv:hover,.sv.on{
+    background-color: #BD0202;
+    color: #ffffff;
+    border-color: #700000;
+}
+.click-area{
+    position: absolute;
+    height: 100%;
+    width: 99%;
+    top: 0;
+    z-index: 5;
 }
 .col-channel-list{
   position: relative;
@@ -227,7 +260,32 @@ body {
     cursor: pointer;
 }
 .navbar-nav > li > button {
-    margin: 7px 5px;
+    margin: 15px 5px;
+    padding: 0 5px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.tab-cannel .dropdown .dropdown-menu {
+    min-width: 100px;
+    background-color: #1a1a1a;
+    border-radius: 0;
+    border-color: #cccccc;
+    padding: 0;
+}
+
+.tab-cannel .dropdown .dropdown-menu li a {
+    color: #ffffff;
+}
+
+.tab-cannel .dropdown .dropdown-menu li a:hover{
+    color: #1a1a1a;
+}
+
+.tab-cannel .open > a, .tab-cannel .open > a:hover, .tab-cannel .open > a:focus {
+    background-color: #1a1a1a;
 }
 
 .modal-header {
@@ -322,5 +380,14 @@ body {
 .footer-desc span{
     color: #666;
     font-size: 11px;
+}
+
+/*TWITTER*/
+.twitter-li {
+    padding-right: 15px;
+}
+.twitter-li iframe{
+    margin-top: 15px;
+    max-width: 80px;
 }
 

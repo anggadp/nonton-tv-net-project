@@ -9,18 +9,18 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="shortcut icon" href="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iconcopy.png">
-        <link rel="stylesheet" href="https://nonton-tv-net-project.googlecode.com/git/public_html/css/bootstrap-theme.css" type="text/css" media="screen" title="default" />
-        <link rel="stylesheet" href="https://nonton-tv-net-project.googlecode.com/git/public_html/css/bootstrap.css" type="text/css" media="screen" title="default" />
-        <link rel="stylesheet" href="https://nonton-tv-net-project.googlecode.com/git/public_html/css/AppsCSS.css" type="text/css" media="screen" title="default" />
+        <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" media="screen" title="default" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" title="default" />
+        <link rel="stylesheet" href="css/AppsCSS.css" type="text/css" media="screen" title="default" />
 
-        <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/jquery-1.10.1.min.js" ></script>
-        <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/jquery-ui-1.9.2.custom.min.js"></script>
-        <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/bootstrap-datepicker.js"></script>
-        <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/bootbox.min.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js" ></script>
+        <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="js/bootbox.min.js"></script>
         <script type="text/javascript" src="http://jwpsrv.com/library/kql8FKhPEeSPgxJtO5t17w.js"></script>
-        <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/Apps.js"></script>
-        <script type="text/javascript" src="https://nonton-tv-net-project.googlecode.com/git/public_html/js/advertise.js"></script>
+        <script type="text/javascript" src="js/Apps.js"></script>
+        <script type="text/javascript" src="js/advertise.js"></script>
         
     </head>
     <body>
@@ -38,8 +38,12 @@ and open the template in the editor.
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Statistic</a></li>
+                <li><a href="/">Home</a></li>
+                <li class="twitter-li">
+                    <a href="https://twitter.com/nontontvnet" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false"></a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-via="nontontvnet" data-hashtags="TVOnlineStreaming"></a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </li>  
+                <li><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fnontontv.zz.mu&amp;width=30&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="margin-top:15px; overflow:hidden; width:130px; height:24px;" allowTransparency="true"></iframe></li>
                 <li><button id="adver" class="btn btn-warning">Advertise</button></li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -58,7 +62,13 @@ and open the template in the editor.
                         <li class="kidtv"><a href="#kidtv" data-toggle="tab">Kids</a></li>
                         <li class="adulttv" data-xyz="0"><a href="#adulttv" data-toggle="tab">18+</a></li>
                         <li class="koreatv"><a href="#koreatv" data-toggle="tab">Korea</a></li>
-                        <li class="othertv"><a href="#othertv" data-toggle="tab">Others</a></li>
+                        <li class="dropdown">
+                            <a href="" data-toggle="dropdown" class="dropdown-toggle">More <b class="caret"></b></a>
+                            <ul class="dropdown-menu dropnav navbar-top">
+                                <li class="soccertv"><a href="#soccertv" data-toggle="tab">Soccer</a></li>
+                                <li class="othertv"><a href="#othertv" data-toggle="tab">Others</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <div id="myTabContentChannel" class="tab-content">
                         <div class="tab-pane active" id="indtv">
@@ -66,9 +76,6 @@ and open the template in the editor.
                         </div>
                         <div class="tab-pane" id="koreatv">
                             <div id="channel-list" class="cl-korea"></div>
-                        </div>
-                        <div class="tab-pane" id="othertv">
-                            <div id="channel-list" class="cl-other"></div>
                         </div>
                         <div class="tab-pane" id="sporttv">
                             <div id="channel-list" class="cl-sport"></div>
@@ -78,6 +85,12 @@ and open the template in the editor.
                         </div>
                         <div class="tab-pane" id="adulttv">
                             <div id="channel-list" class="cl-adult"></div>
+                        </div>
+                        <div class="tab-pane" id="soccertv">
+                            <div id="channel-list" class="cl-soccer"></div>
+                        </div>
+                        <div class="tab-pane" id="othertv">
+                            <div id="channel-list" class="cl-other"></div>
                         </div>
                     </div>
                 </div>
@@ -109,6 +122,7 @@ and open the template in the editor.
                 <li><a href="#">Creators</a></li>
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Send Feedback</a></li>
+                <li><a id="btn-ads-footer" href="#">Advertise</a></li>
             </div>
             <div class="col-md-12 footer-desc">
                 <a href="#">Privacy</a> 

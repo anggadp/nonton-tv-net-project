@@ -5,6 +5,7 @@
 $(document).ready(function(){
     
     $('#adver').click(function(){ $('#myModalAdvertising').modal('show'); });
+    $('#btn-ads-footer').click(function(){ $('#myModalAdvertising').modal('show'); });
     
     var ADSPA = [
         {
