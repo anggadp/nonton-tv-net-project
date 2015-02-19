@@ -84,7 +84,7 @@ $(document).ready(function(){
         {   
             "id"   : "sctv",
             "name" : "SCTV",        
-            "url"  : ["rtmp://cdnjkt.mivo.tv/mivotvjkt/sctv2"],
+            "url"  : ["rtmp://cdnjkt.mivo.tv/mivotvjkt/sctv2","rtmp://cdnjkt.mivo.tv:1935/mivotvjkt/sctv2_240p"],
             "logo" : "https://nonton-tv-net-project.googlecode.com/git/public_html/image/20110218143118!SCTV_Logo.png"
         },
         {   
