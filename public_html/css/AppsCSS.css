@@ -160,8 +160,9 @@ body {
     background-color: #fff;
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-    margin-right: 10px; 
-    margin-top: 10px;
+    float: left;
+    margin: 0;
+    margin-bottom: 10px;
 }
 .adv-pa-content {
     background-color: #d5d5d5;
@@ -177,7 +178,7 @@ body {
 
 @media (min-width: 992px) {
     .adv-pa {
-        width: 63%;
+        width: 100%;
     }
     .adv-pa-content {
         height: 100px;
@@ -202,7 +203,9 @@ body {
     background-color: #fff;
     border: 1px solid;
     border-color: #e5e6e9 #dfe0e4 #d0d1d5;
-    margin-top: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    float: left;
 }
 .adv-sb-content {
     background-color: #a5a5a5;
@@ -219,7 +222,7 @@ body {
 
 @media (min-width: 992px) {
     .adv-sb {
-        width: 36%;
+        width: 100%;
     }
     .adv-sb-content {
         height: 100px;
@@ -236,10 +239,6 @@ body {
         left: 0;
         margin: auto;
     }
-}
-
-.nav > li > a {
-    padding: 10px 15px;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -401,3 +400,38 @@ body {
     max-width: 80px;
 }
 
+/* ALERT SIDEBAR */
+.alert-sidebar{
+    margin-bottom: 10px;
+    border-radius: 1px;
+    font-size: 11px;
+    padding: 5px 10px 5px 5px;
+}
+
+/* SIDEBAR */
+.sidebar-main {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+.sidebar-right {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .sidebar-main {
+        width: 63%;
+        margin-right: 10px;
+    }
+    .sidebar-right {
+        width: 36%;
+    }
+}

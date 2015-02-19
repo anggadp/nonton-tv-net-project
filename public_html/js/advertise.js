@@ -77,6 +77,43 @@ $(document).ready(function(){
     
     ADSL(ADSPA,'pa');
     ADSL(ADSSB,'sb');
+    
+/* ALERT */
+    var cALERT = 
+    [
+        {
+            "ct"    : "danger",
+            "text"  : "<strong>GONG XI FA CAI</strong> Selamat Tahun Baru Cina.",
+            "exdt"  : "3030-02-20"
+        },
+        {
+            "ct"    : "info",
+            "text"  : "<strong>INFO!</strong> This website is still in development stage. Please support ! Thank you for visiting our website.",
+            "exdt"  : "3030-01-01"
+        },
+        {
+            "ct"    : "warning",
+            "text"  : "<strong>WARNING!</strong> The 18+ content only for 18 plus years old. we are not responsible for anything that happens due to the content.",
+            "exdt"  : "3030-01-01"
+        }
+    ];
+    
+    function ALERT(o){
+        var s = '';
+        for (var i=0; i<o.length; i++)
+        { 
+            var d = new Date();
+            var hasil = CalculateDate(o[i]["exdt"],d.yyyymmdd());
+            if (hasil > 0){
+                s += '<div class="alert alert-'+o[i]["ct"]+' alert-sidebar" role="alert">'+
+                        '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+                        o[i]["text"]+
+                    '</div>';
+            }
+        };
+        $('.alert-view').empty().append(s);
+    };
+    ALERT(cALERT);
 });
 
 
