@@ -472,5 +472,18 @@ $(document).ready(function(){
     CNLL(cSOCCER,'soccer');
     CNLL(cOTHER,'other');
     
+    
+/* FIXED SCROLLBAR */
+
+    window.onscroll = changePosOnScroll;     
+    
+    function changePosOnScroll() { //footer
+        if (window.pageYOffset > 50) {
+            $('.footer').addClass('footer-relative');
+        } else {
+            $('.footer').removeClass('footer-relative');
+        };
+    };
+    
 });
 
