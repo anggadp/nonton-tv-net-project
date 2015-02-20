@@ -284,13 +284,13 @@ $(document).ready(function(){
         {
             "id"   : "adult1",
             "name" : "Jav TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd1003"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld1003","rtmp://edge2.everyon.tv/etv2/phd1003"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult2",
             "name" : "Korea Plus TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd992"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld992","rtmp://edge2.everyon.tv/etv2/phd992"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
@@ -308,7 +308,7 @@ $(document).ready(function(){
         {
             "id"   : "adult4",
             "name" : "Ohdeok 오덕구사이 942 TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd993"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld993","rtmp://edge2.everyon.tv/etv2/phd993"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
@@ -320,139 +320,139 @@ $(document).ready(function(){
         {
             "id"   : "adult6",
             "name" : "Paradise TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd1008"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld1008","rtmp://edge2.everyon.tv/etv2/phd1008"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult7",
             "name" : "ASK TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd1005"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld1005","rtmp://edge2.everyon.tv/etv2/phd1005"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult8",
             "name" : "Movie N Joy TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd509"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld509","rtmp://edge2.everyon.tv/etv2/phd509"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult10",
             "name" : "Hot Movie TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd511"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld511","rtmp://edge2.everyon.tv/etv2/phd511"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult11",
             "name" : "Sakura TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd61"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld61","rtmp://edge2.everyon.tv/etv2/phd61"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult12",
             "name" : "Play 19+ TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd769"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld769","rtmp://edge2.everyon.tv/etv2/phd769"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult13",
             "name" : "Pink TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd62"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld62","rtmp://edge2.everyon.tv/etv2/phd62"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "adult14",
             "name" : "Liveting TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd64"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld64","rtmp://edge2.everyon.tv/etv2/phd64"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "vikitv",
             "name" : "VIKI TV",        
-            "url"  : ["rtmp://edge1.everyon.tv/etv1/phd765"],
+            "url"  : ["rtmp://edge1.everyon.tv/etv1/pld765","rtmp://edge1.everyon.tv/etv1/phd765"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "midnight19tv",
             "name" : "Midnight TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd766"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld766","rtmp://edge2.everyon.tv/etv2/phd766"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "thelo",
             "name" : "The Lo TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd771"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld771","rtmp://edge2.everyon.tv/etv2/phd771"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "thebutgotv",
             "name" : "The But Go TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd772"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld772","rtmp://edge2.everyon.tv/etv2/phd772"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "penthousehdtv",
             "name" : "PENTHOUSE HD TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd927"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld927","rtmp://edge2.everyon.tv/etv2/phd927"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "honeyhdtv",
             "name" : "Honey HD TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd928"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld928","rtmp://edge2.everyon.tv/etv2/phd928"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "playboytv",
             "name" : "PLAYBOY TV",        
-            "url"  : ["rtmp://edge1.everyon.tv/etv1/phd497"],
+            "url"  : ["rtmp://edge1.everyon.tv/etv1/pld497","rtmp://edge1.everyon.tv/etv1/phd497"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "truelovetv",
             "name" : "True LOVE TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd499"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld499","rtmp://edge2.everyon.tv/etv2/phd499"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "girlstv",
             "name" : "Girls TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd501"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld501","rtmp://edge2.everyon.tv/etv2/phd501"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "fethiswomantv",
             "name" : "Fethis Woman TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd968"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld968","rtmp://edge2.everyon.tv/etv2/phd968"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "c16",
             "name" : "C16 TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd59"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld59","rtmp://edge2.everyon.tv/etv2/phd59"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "c17",
             "name" : "C17 TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd60"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld60","rtmp://edge2.everyon.tv/etv2/phd60"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "c20",
             "name" : "C20 TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd63"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld63","rtmp://edge2.everyon.tv/etv2/phd63"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "c29",
             "name" : "C29 TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd991"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld991","rtmp://edge2.everyon.tv/etv2/phd991"],
             "logo" : fs+"image/iconcopy400.png"
         },
         {
             "id"   : "livething2tv",
             "name" : "LiveTing II TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd1006"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld1006","rtmp://edge2.everyon.tv/etv2/phd1006"],
             "logo" : fs+"image/iconcopy400.png"
         }       
     ];
