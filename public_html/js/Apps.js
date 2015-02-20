@@ -133,7 +133,7 @@ $(document).ready(function(){
             "id"   : "kompastv",
             "name" : "Kompas TV",        
             "url"  : ["rtmp://202.137.11.52/jakarta/offair.sdp"],
-            "logo" : fs+"image/kompastv.jpg"
+            "logo" : fs+"image/kompastv.png"
         },
         {   
             "id"   : "sindotv",
