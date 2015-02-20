@@ -17,7 +17,7 @@ $(document).ready(function(){
         return Sp[a];
     };
     
-    function VIDEOJS(file,image,title,id,sv){
+    function VIDEOJS2(file,image,title,id,sv){
         $('#player-area').empty().append('<div id="'+id+'-'+sv+'"></div>');
         jwplayer(id+'-'+sv).setup({
             file : file,
@@ -34,7 +34,7 @@ $(document).ready(function(){
         });
     };
     
-    function VIDEOJS2(file,image,title,id,sv){
+    function VIDEOJS(file,image,title,id,sv){
         $('#player-area').empty().append('<div id="'+id+'-'+sv+'"></div>');
         jwplayer(id+'-'+sv).setup({
             title       : title,
