@@ -435,3 +435,31 @@ body {
         width: 36%;
     }
 }
+
+.live-traffic{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -1600px;
+    margin: auto;
+    float: left;
+    width: 300px;
+    max-height: 470px;
+    background: #1a1a1a;
+    z-index: 1031;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.live-traffic .btn-close-traffic {
+    padding: 0px 6px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 1032;
+}
