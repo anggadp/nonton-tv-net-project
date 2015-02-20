@@ -17,43 +17,20 @@ $(document).ready(function(){
         return Sp[a];
     };
     
-    function VIDEOJS2(file,image,title,id,sv){
+    function VIDEOJS(file,image,title,id,sv){
         $('#player-area').empty().append('<div id="'+id+'-'+sv+'"></div>');
         jwplayer(id+'-'+sv).setup({
             file : file,
             image: image,
             title: title,
+            androidhls:true,
             width: '100%',
             aspectratio: '16:9',
             autostart: 'true',
             repeat: 'true',
             stretching: "exactfit",
             abouttext:"",
-            aboutlink: "",
-            primary: 'flash'
-        });
-    };
-    
-    function VIDEOJS(file,image,title,id,sv){
-        $('#player-area').empty().append('<div id="'+id+'-'+sv+'"></div>');
-        jwplayer(id+'-'+sv).setup({
-            title       : title,
-            width       : "100%",
-            autostart   : true,
-            aspectratio : '16:9',
-            stretching  : "exactfit",
-            repeat      : 'true',
-            modes       :   [
-                                { 
-                                    type    : 'flash', 
-                                    src     : fs+'swf/player.swf', 
-                                    config  : { provider: 'swf/HLSProvider5.swf', file: file } 
-                                },
-                                { 
-                                    type    : 'html5', 
-                                    config  : { file: file } 
-                                }
-                            ]
+            aboutlink: ""
         });
     };
 
@@ -77,7 +54,7 @@ $(document).ready(function(){
         {   
             "id"   : "net",
             "name" : "NET",        
-            "url"  : ["http://61.91.12.34:1935/live/smil:tv5adaptive.smil/playlist.m3u8","rtmp://win.stream.netmedia.co.id/live/nettv_mid"],
+            "url"  : ["rtmp://win.stream.netmedia.co.id/live/nettv_mid"],
             "logo" : fs+"image/Net-TV-dan-KPI-1-480x300.png"
         },
         {   
