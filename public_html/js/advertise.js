@@ -82,9 +82,9 @@ $(document).ready(function(){
     var cALERT = 
     [
         {
-            "ct"    : "danger",
-            "text"  : "<strong>GONG XI FA CAI</strong> Selamat Tahun Baru Cina.",
-            "exdt"  : "3030-02-20"
+            "ct"    : "info",
+            "text"  : "<strong>NEW! Send Feedback.</strong> NTVNet Feedback lets you send NTVNet suggestions about our products. We welcome problem reports, feature ideas and general comments.",
+            "exdt"  : "2015-03-30"
         },
         {
             "ct"    : "info",
