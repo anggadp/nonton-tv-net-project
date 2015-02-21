@@ -464,6 +464,12 @@ $(document).ready(function(){
             "name" : "MCFC vs Chelsea",        
             "url"  : ["rtmp://cdnjkt.mivo.tv/mivotvjkt/tvone2_240p"],
             "logo" : fs+"image/soccerpng.png"
+        },
+        {   
+            "id"   : "soccer2",
+            "name" : "Chelsea vs Burnley",        
+            "url"  : ["rtmp://live.pxstream.tv/redirect?wmsAuthSign=/fut10"],
+            "logo" : fs+"image/soccerpng.png"
         }
     ];
     
