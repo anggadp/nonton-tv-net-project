@@ -206,55 +206,55 @@ $(document).ready(function(){
         {
             "id"   : "gtvhd",
             "name" : "G TV HD",        
-            "url"  : ["rtmp://edge1.everyon.tv/etv1/phd44"],
+            "url"  : ["rtmp://edge1.everyon.tv/etv1/pld44","rtmp://edge1.everyon.tv/etv1/phd44"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "outdoortv",
             "name" : "Korea Outdoor TV",        
-            "url"  : ["rtmp://edge1.everyon.tv/etv1/phd613"],
+            "url"  : ["rtmp://edge1.everyon.tv/etv1/pld613","rtmp://edge1.everyon.tv/etv1/phd613"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "playytv",
             "name" : "PLAYY I TV",        
-            "url"  : ["rtmp://edge1.everyon.tv/etv1/phd767"],
+            "url"  : ["rtmp://edge1.everyon.tv/etv1/pld767","rtmp://edge1.everyon.tv/etv1/phd767"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "chingmtv",
             "name" : "CHING m TV",        
-            "url"  : ["rtmp://edge1.everyon.tv/etv1/phd783"],
+            "url"  : ["rtmp://edge1.everyon.tv/etv1/pld783","rtmp://edge1.everyon.tv/etv1/phd783"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "playy2tv",
             "name" : "PLAYY II TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd743"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld743","rtmp://edge2.everyon.tv/etv2/phd743"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "playy3tv",
             "name" : "PLAYY III TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd770"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld770","rtmp://edge2.everyon.tv/etv2/phd770"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "ohidztv",
             "name" : "OHidz TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd505"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld505","rtmp://edge2.everyon.tv/etv2/phd505"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "cartoonkoreatv",
             "name" : "Cartoon Korea TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd507"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/pld507","rtmp://edge2.everyon.tv/etv2/phd507"],
             "logo" : fs+"image/korea.png"
         },
         {
             "id"   : "movkoreatv",
             "name" : "MOV Korea TV",        
-            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd513"],
+            "url"  : ["rtmp://edge2.everyon.tv/etv2/phd513","rtmp://edge2.everyon.tv/etv2/phd513"],
             "logo" : fs+"image/korea.png"
         }    
     ];
@@ -463,12 +463,6 @@ $(document).ready(function(){
             "id"   : "soccer1",
             "name" : "MCFC vs Chelsea",        
             "url"  : ["rtmp://cdnjkt.mivo.tv/mivotvjkt/tvone2_240p"],
-            "logo" : fs+"image/soccerpng.png"
-        },
-        {   
-            "id"   : "soccer2",
-            "name" : "Chelsea vs Burnley",        
-            "url"  : ["rtmp://live.pxstream.tv/redirect?wmsAuthSign=/fut10"],
             "logo" : fs+"image/soccerpng.png"
         }
     ];
