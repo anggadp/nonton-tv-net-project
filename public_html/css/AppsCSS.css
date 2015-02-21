@@ -367,6 +367,7 @@ body {
     font-size: 12px;
     font-weight: bold;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .footer-menu li a:hover{
