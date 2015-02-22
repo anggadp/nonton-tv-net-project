@@ -143,6 +143,7 @@ body {
 .col-player{
   padding: 0px;
   height: 404px;
+  background: black;
 }
 
 @media (min-width: 992px) {
@@ -465,6 +466,27 @@ body {
     right: 4px;
     top: 4px;
     z-index: 1032;
+}
+
+#player-area {
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#player-area span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 20px;
+    text-align: center;
 }
 
 #player-area embed{

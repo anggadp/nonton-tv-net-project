@@ -12,8 +12,16 @@ $(document).ready(function(){
         return Split[a];
     };
     
+    function utf8_to_b64( str ) {  //encode
+        return window.btoa(unescape(encodeURIComponent( str )));
+    };
+
+    function b64_to_utf8( str ) { //decode
+        return decodeURIComponent(escape(window.atob( str )));
+    };
+    
     function UrlSplitSecond(url,a){
-        var Sp = url.split('/');
+        var Sp = b64_to_utf8(url).split('/');
         return Sp[a];
     };
     
@@ -23,8 +31,10 @@ $(document).ready(function(){
     };
     
     function VIDEOJS(file,image,title,id,sv){
-        
-        if (UrlFileSplit(file,0) === 'embed'){
+        console.log(file);
+        if (id === '' || sv === '' || file === undefined){
+            $('#player-area').empty().append('<span>Sorry, URL not valid.</span>');
+        }else if (UrlFileSplit(file,0) === 'embed'){
             var em = '<embed id="embedTV" src='+UrlFileSplit(file,1)+' >';
             $('#player-area').empty().append(em);
         } else {
@@ -49,7 +59,7 @@ $(document).ready(function(){
         $.ajax({
             success: function(){
                 $('.clb-'+ct+'-'+i+'-'+sv).click(function(){
-                    window.history.pushState({ foo: "bar" },"", '//'+document.domain+urlDelimiter+ct+'/'+i+'/'+sv);
+                    window.history.pushState({ foo: "bar" },"", '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+sv));
                     $('#'+id+'-'+sv).html(VIDEOJS(url,logo,name,id,sv));
                     $('.channel-list-box').removeClass('on');
                     $('.clb-'+ct+'-'+i).addClass('on');
