@@ -466,3 +466,8 @@ body {
     top: 4px;
     z-index: 1032;
 }
+
+#player-area embed{
+    background:black; width:718px; height:404px; overflow:hidden;
+}
+

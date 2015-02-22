@@ -17,21 +17,32 @@ $(document).ready(function(){
         return Sp[a];
     };
     
+    function UrlFileSplit(url,a){
+        var Sp = url.split(' ');
+        return Sp[a];
+    };
+    
     function VIDEOJS(file,image,title,id,sv){
-        $('#player-area').empty().append('<div id="'+id+'-'+sv+'"></div>');
-        jwplayer(id+'-'+sv).setup({
-            file : file,
-            image: image,
-            title: title,
-            androidhls:true,
-            width: '100%',
-            aspectratio: '16:9',
-            autostart: 'true',
-            repeat: 'true',
-            stretching: "exactfit",
-            abouttext:"",
-            aboutlink: ""
-        });
+        
+        if (UrlFileSplit(file,0) === 'embed'){
+            var em = '<embed id="embedTV" src='+UrlFileSplit(file,1)+' >';
+            $('#player-area').empty().append(em);
+        } else {
+            $('#player-area').empty().append('<div id="'+id+'-'+sv+'"></div>');
+            jwplayer(id+'-'+sv).setup({
+                file : file,
+                image: image,
+                title: title,
+                androidhls:true,
+                width: '100%',
+                aspectratio: '16:9',
+                autostart: 'true',
+                repeat: 'true',
+                stretching: "exactfit",
+                abouttext:"",
+                aboutlink: ""
+            });
+        }
     };
 
     function CLICKCHNELLIST(id,url,logo,name,i,ct,o,sv){
@@ -158,10 +169,22 @@ $(document).ready(function(){
             "logo" : fs+"image/astroawani.jpg"
         },
         {
-            "id"   : "1hijautv",
-            "name" : "1Hijau TV",        
-            "url"  : ["rtmpt://119.110.96.71/live/1htv"],
-            "logo" : fs+"image/1hijautv.png"
+            "id"   : "malaytv1",
+            "name" : "TV1",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=tv1&width=718&height=399&q=p"],
+            "logo" : fs+"image/tv1malay.png"
+        },
+        {
+            "id"   : "malaytv2",
+            "name" : "TV2",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=tv2&width=718&height=399&q=p"],
+            "logo" : fs+"image/tv2malay.png"
+        },
+        {
+            "id"   : "malaytvi",
+            "name" : "TVi",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=tvi&width=718&height=399&q=p"],
+            "logo" : fs+"image/tvimalay.png"
         },
         {
             "id"   : "selangortv",
@@ -170,34 +193,70 @@ $(document).ready(function(){
             "logo" : fs+"image/tvselangor.png"
         },
         {
-            "id"   : "mobtv",
-            "name" : "Mob TV",        
-            "url"  : ["rtmp://fl1.sz.xlcdn.com/live/sz=IMN=mobtv2012"],
-            "logo" : fs+"image/iconcopy400.png"
-        },
-        {
             "id"   : "Muzikaktiftv",
             "name" : "Muzik Aktif TV",        
-            "url"  : ["rtmp://BKJ-STR-1.se.rtm-fms.cdn.jaring.my:1935/livepkgr/rtmmuzik2"],
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=muzikaktif&width=718&height=399&q=p"],
             "logo" : fs+"image/muzikaktiftv.png"
         },
         {
-            "id"   : "malaytv1",
-            "name" : "TV1",        
-            "url"  : ["rtmp://BYB-STR-1.se.rtm-fms.cdn.jaring.my:1935/livepkgr/rtm12"],
-            "logo" : fs+"image/tv1malay.png"
+            "id"   : "maratv",
+            "name" : "Mara TV",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=maratv&width=718&height=399&q=p"],
+            "logo" : fs+"image/maratv.png"
         },
         {
-            "id"   : "malaytv2",
-            "name" : "TV2",        
-            "url"  : ["rtmp://BYB-STR-1.se.rtm-fms.cdn.jaring.my:1935/livepkgr/rtm22"],
-            "logo" : fs+"image/tv2malay.png"
+            "id"   : "1hijautv",
+            "name" : "1Hijau TV",        
+            "url"  : ["rtmpt://119.110.96.71/live/1htv"],
+            "logo" : fs+"image/1hijautv.png"
         },
         {
-            "id"   : "malaytvi",
-            "name" : "TVi",        
-            "url"  : ["rtmp://BYB-STR-1.se.rtm-fms.cdn.jaring.my:1935/livepkgr/rtmi2"],
-            "logo" : fs+"image/tvimalay.png"
+            "id"   : "bernamatv",
+            "name" : "BERNAMA",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=bernama2&width=718&height=399&q=p"],
+            "logo" : fs+"image/bernamatv.png"
+        },
+        {
+            "id"   : "rtmparlimen",
+            "name" : "RTM Parlimen",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=parlimen&width=718&height=399&q=p"],
+            "logo" : fs+"image/rtmparlimen.png"
+        },
+        {
+            "id"   : "majlisbeliamalay",
+            "name" : "Majlis Belia Malaysia",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=mbm&width=718&height=399&q=p"],
+            "logo" : fs+"image/majlisbeliatv.png"
+        },
+        {
+            "id"   : "putratv",
+            "name" : "Putra TV",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=putratv&width=718&height=399&q=p"],
+            "logo" : fs+"image/iconcopy400.png"
+        },
+        {
+            "id"   : "rcomalay",
+            "name" : "RCO TV",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=acotv&width=718&height=399&q=p"],
+            "logo" : fs+"image/iconcopy400.png"
+        },
+        {
+            "id"   : "angkasatv",
+            "name" : "Angkasa TV",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=angkasa&width=718&height=399&q=p"],
+            "logo" : fs+"image/iconcopy400.png"
+        },
+        {
+            "id"   : "booktvmalay",
+            "name" : "Book TV",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=booktv&width=718&height=399&q=p"],
+            "logo" : fs+"image/iconcopy400.png"
+        },
+        {
+            "id"   : "kctvmalay",
+            "name" : "KC TV",        
+            "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=kctv&width=718&height=399&q=p"],
+            "logo" : fs+"image/iconcopy400.png"
         }
     ];
     
