@@ -31,7 +31,6 @@ $(document).ready(function(){
     };
     
     function VIDEOJS(file,image,title,id,sv){
-        console.log(file);
         if (id === '' || sv === '' || file === undefined){
             $('#player-area').empty().append('<span>Sorry, URL not valid.</span>');
         }else if (UrlFileSplit(file,0) === 'embed'){
@@ -629,14 +628,14 @@ $(document).ready(function(){
 
     $('.traffic')
         .click(function(){
-            if ($('.live-traffic').css('left')==='-1600px')
+            if ($('.live-traffic').css('left')==='-1900px')
                 $('.live-traffic').css('left','0');
             else
-                $('.live-traffic').css('left','-1600px');
+                $('.live-traffic').css('left','-1900px');
         });
     $('.btn-close-traffic')
         .click(function(){
-            $('.live-traffic').css('left','-1600px');
+            $('.live-traffic').css('left','-1900px');
         });
         
 /* SEND FEEDBACK */
@@ -652,5 +651,5 @@ $(document).ready(function(){
                 fjs.parentNode.insertBefore(js, fjs);
               }(document, 'script', 'facebook-jssdk'));
         });
-             
+        
 });

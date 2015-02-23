@@ -83,6 +83,11 @@ $(document).ready(function(){
     [
         {
             "ct"    : "info",
+            "text"  : "<strong>NEW! Chat Room.</strong> Channel Tab > Chat. Have fun guys.",
+            "exdt"  : "2015-03-30"
+        },
+        {
+            "ct"    : "info",
             "text"  : "<strong>NEW! Send Feedback.</strong> NTVNet Feedback lets you send NTVNet suggestions about our products. We welcome problem reports, feature ideas and general comments.",
             "exdt"  : "2015-03-30"
         },
