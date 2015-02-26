@@ -190,10 +190,34 @@ $(document).ready(function(){
             "logo" : fs+"image/tv2malay.png"
         },
         {
+            "id"   : "malaytv3",
+            "name" : "TV3",        
+            "url"  : ["embed "+fs+"embed/t3international.html","embed "+fs+"embed/t3malay2.html"],
+            "logo" : fs+"image/tv3malay.png"
+        },
+        {
             "id"   : "malaytvi",
             "name" : "TVi",        
             "url"  : ["embed http://www.1malaysiatv.com.my/embed/player.php?ch=tvi&width=718&height=399&q=p"],
             "logo" : fs+"image/tvimalay.png"
+        },
+        {
+            "id"   : "tv7malay",
+            "name" : "TV 7",        
+            "url"  : ["embed "+fs+"embed/t7malay1.html","embed "+fs+"embed/t7malay2.html"],
+            "logo" : fs+"image/tv7malay.png"
+        },
+        {
+            "id"   : "tv8malay",
+            "name" : "TV 8",        
+            "url"  : ["embed "+fs+"embed/t8malay1.html","embed "+fs+"embed/t8malay2.html"],
+            "logo" : fs+"image/tv8malay.png"
+        },
+        {
+            "id"   : "tv9malay",
+            "name" : "TV 9",        
+            "url"  : ["embed "+fs+"embed/t9malay1.html","embed "+fs+"embed/t9malay2.html"],
+            "logo" : fs+"image/tv9malay.png"
         },
         {
             "id"   : "selangortv",
