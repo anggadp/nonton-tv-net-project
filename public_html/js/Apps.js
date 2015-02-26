@@ -192,7 +192,7 @@ $(document).ready(function(){
         {
             "id"   : "malaytv3",
             "name" : "TV3",        
-            "url"  : ["embed "+fs+"embed/tv3malayinternational.html","embed "+fs+"embed/tv3malay2.html"],
+            "url"  : ["embed http://embednontontvnet.blogspot.com/2015/02/tv3malayinternational.html","embed http://embednontontvnet.blogspot.com/2015/02/tv3malay2.html"],
             "logo" : fs+"image/tv3malay.png"
         },
         {
@@ -204,19 +204,19 @@ $(document).ready(function(){
         {
             "id"   : "tv7malay",
             "name" : "TV 7",        
-            "url"  : ["embed "+fs+"embed/tv7malay1.html","embed "+fs+"embed/tv7malay2.html"],
+            "url"  : ["embed http://embednontontvnet.blogspot.com/2015/02/tv7malay1.html","embed http://embednontontvnet.blogspot.com/2015/02/tv7malay2.html"],
             "logo" : fs+"image/tv7malay.png"
         },
         {
             "id"   : "tv8malay",
             "name" : "TV 8",        
-            "url"  : ["embed "+fs+"embed/tv8malay1.html","embed "+fs+"embed/tv8malay2.html"],
+            "url"  : ["embed http://embednontontvnet.blogspot.com/2015/02/tv8malay1_26.html"],
             "logo" : fs+"image/tv8malay.png"
         },
         {
             "id"   : "tv9malay",
             "name" : "TV 9",        
-            "url"  : ["embed "+fs+"embed/tv9malay1.html"],
+            "url"  : ["embed http://embednontontvnet.blogspot.com/2015/02/tv9malay2.html","embed http://embednontontvnet.blogspot.com/2015/02/tv9malay1.html"],
             "logo" : fs+"image/tv9malay.png"
         },
         {
