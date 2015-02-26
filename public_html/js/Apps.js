@@ -192,7 +192,7 @@ $(document).ready(function(){
         {
             "id"   : "malaytv3",
             "name" : "TV3",        
-            "url"  : ["embed "+fs+"embed/tv3international.html","embed "+fs+"embed/tv3malay2.html"],
+            "url"  : ["embed "+fs+"embed/tv3malayinternational.html","embed "+fs+"embed/tv3malay2.html"],
             "logo" : fs+"image/tv3malay.png"
         },
         {
