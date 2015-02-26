@@ -216,7 +216,7 @@ $(document).ready(function(){
         {
             "id"   : "tv9malay",
             "name" : "TV 9",        
-            "url"  : ["embed "+fs+"embed/tv9malay1.html","embed "+fs+"embed/tv9malay2.html"],
+            "url"  : ["embed "+fs+"embed/tv9malay1.html"],
             "logo" : fs+"image/tv9malay.png"
         },
         {
