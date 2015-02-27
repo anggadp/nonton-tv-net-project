@@ -11,7 +11,7 @@ $(document).ready(function(){
         {
             'id'    : '1',
             'cd'    : '<a href=""><embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan710x100copy.jpg"></a>',
-            'exdt'  : '2050-02-9'
+            'exdt'  : '2012-02-9'
         }
     ];
     
@@ -19,7 +19,7 @@ $(document).ready(function(){
         {
             'id'    : '1',
             'cd'    : '<a href=""><embed src="https://nonton-tv-net-project.googlecode.com/git/public_html/image/iklan200x200.jpg"></a>',
-            'exdt'  : '2050-02-9'
+            'exdt'  : '2012-02-9'
         }
     ];
     
@@ -64,7 +64,7 @@ $(document).ready(function(){
             var hasil = CalculateDate(o[i]["exdt"],d.yyyymmdd());
             ADVERTISE += '<div class="adv-'+ct+'-content adv-'+ct+'-'+o[i]["id"]+'">';
             if (hasil < 0){
-                ADVERTISE += sz+'<p>Click <button id="adver-'+ct+'-'+o[i]["id"]+'" class="btn btn-warning">Advertising</button> button to put your advertising</p>';  
+                ADVERTISE += sz+'<p>Click <button id="adver-'+ct+'-'+o[i]["id"]+'" class="btn btn-warning btn-ads">Advertising</button> button to put your advertising</p>';  
             } else {
                 ADVERTISE += o[i]["cd"];
             }
