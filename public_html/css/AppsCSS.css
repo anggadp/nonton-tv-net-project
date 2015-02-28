@@ -372,8 +372,8 @@ body {
     width: 100px;
 }
 .footer-menu{
-    height: 40px;
     line-height: 2.8;
+    float: left;
 }
 .footer-menu li{
     float: left;
@@ -403,7 +403,8 @@ body {
     padding: 10px 0px;
     border-top: 1px solid #f0f0f0;
     font-size: 11px;
-    
+    float: left;
+    width: 100%;
 }
 
 .footer-desc a{
@@ -459,6 +460,7 @@ body {
     margin: 0;
     margin-top: 10px;
     width: 100%;
+    overflow: hidden;
 }
 .sidebar-right {
     position: relative;
