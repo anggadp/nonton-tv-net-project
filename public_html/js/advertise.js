@@ -78,6 +78,12 @@ $(document).ready(function(){
     ADSL(ADSPA,'pa');
     ADSL(ADSSB,'sb');
     
+/* PLAYER AREA ADS */
+    
+    $('.pa-ads').html(function(){
+        $(this).append('');
+    });
+            
 /* ALERT */
     var cALERT = 
     [

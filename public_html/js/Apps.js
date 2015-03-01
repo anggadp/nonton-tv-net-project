@@ -44,7 +44,7 @@ $(document).ready(function(){
                 title: title,
                 androidhls:true,
                 width: '100%',
-                aspectratio: '16:9',
+                height: '100%',
                 autostart: 'true',
                 repeat: 'true',
                 stretching: "exactfit",

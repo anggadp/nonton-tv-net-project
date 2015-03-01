@@ -153,6 +153,12 @@ body {
     z-index: 1030;
 }
 
+@media (min-width: 1200px) {
+  .container-body {
+    width: 1190px;
+  }
+}
+
 .col-player{
   padding: 0px;
   height: 404px;
@@ -263,6 +269,48 @@ body {
     font-size: 11px;
     font-weight: bold;
     border-radius: 2px;
+}
+
+.col-player > .pa-ads{
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none; 
+       
+}
+
+.col-player > .pa-ads > .pa-ads-content{
+    position: relative;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+    overflow: hidden;
+    display: inline-table;
+    /*
+    -webkit-box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255,0.25);
+    -moz-box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255,0.25);
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255,0.25);
+    */
+}
+
+.col-player > .pa-ads > .pa-ads-content > .close {
+    opacity: 0.9;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+
+.btn-close-pa-ads {
+    padding: 0 6px;
+    border-radius: 0;
+    font-size: 14px;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
@@ -533,6 +581,12 @@ body {
 
 #player-area embed{
     background:black; width:718px; height:404px; overflow:hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /* CHAT */
