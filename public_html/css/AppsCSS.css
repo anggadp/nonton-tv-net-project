@@ -7,7 +7,7 @@
 */
 
 body {
-  min-height: 715px;
+  min-height: 780px;
   padding-top: 62px;
   background-color: #f5f5f5;
 }
@@ -151,6 +151,7 @@ body {
     padding: 0 2px;
     border-radius: 2px;
     z-index: 1030;
+    color: #fff;
 }
 
 @media (min-width: 1200px) {
@@ -314,10 +315,10 @@ body {
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    color: green;
+    color: #c03636;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #c03636;
     cursor: pointer;
 }
 .nav-tabs > li > a{
@@ -328,10 +329,10 @@ body {
     border-radius: 0;
 }
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
-    color: green;
+    color: #c03636;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid #c03636;
     cursor: pointer;
 }
 .navbar-nav > li > button {
@@ -367,7 +368,7 @@ body {
     background-color: #1a1a1a;
     padding: 7px 10px;
     color: #f5f5f5;
-    border-bottom: 2px solid green;
+    border-bottom: 0px solid #c03636;
 }
 
 .modal-footer {
@@ -528,6 +529,13 @@ body {
     .sidebar-right {
         width: 36%;
     }
+}
+
+.channel-desc{
+    background: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+    border-left: 3px solid #bce8f1;
 }
 
 .live-traffic{
