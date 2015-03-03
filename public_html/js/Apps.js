@@ -159,8 +159,29 @@ $(document).ready(function(){
         },
         {   
             "id"   : "brtstNews",
-            "name" : "Berita Satu",        
-            "url"  : ["rtmp://cdnjkt.mivo.tv/mivotvjkt/beritasatu_240p"],
+            "name" : "Berita Satu News",        
+            "url"  : ["embed http://www.beritasatu.com/_streaming1.html","rtmp://cdnjkt.mivo.tv/mivotvjkt/beritasatu_240p"],
+            "logo" : fs+"image/beritasatu.jpg",
+            "desc" : "BeritaSatu (sebelumnya bernama QTV dan Q Channel) adalah saluran televisi berita yang mengudara sejak tahun 1996. Saluran ini juga berguna sebagai saluran khusus untuk mengenai soal-soal keuangan dan informasi. Saluran ini hanya bisa disaksikan melalui satelit dan kabel dan juga siaran digital terestrial DVB-T2 yang bisa disaksikan via Set Top Box DVB-T2 atau Nexmedia. Target pemirsanya adalah kalangan menengah ke atas. Pemilik dan pendirinya adalah Peter F. Gontha."
+        },
+        {   
+            "id"   : "brtstWorld",
+            "name" : "Berita Satu World",        
+            "url"  : ["embed http://www.beritasatu.com/_streaming2.html"],
+            "logo" : fs+"image/beritasatu.jpg",
+            "desc" : "BeritaSatu (sebelumnya bernama QTV dan Q Channel) adalah saluran televisi berita yang mengudara sejak tahun 1996. Saluran ini juga berguna sebagai saluran khusus untuk mengenai soal-soal keuangan dan informasi. Saluran ini hanya bisa disaksikan melalui satelit dan kabel dan juga siaran digital terestrial DVB-T2 yang bisa disaksikan via Set Top Box DVB-T2 atau Nexmedia. Target pemirsanya adalah kalangan menengah ke atas. Pemilik dan pendirinya adalah Peter F. Gontha."
+        },
+        {   
+            "id"   : "brtstEnglish",
+            "name" : "Berita Satu English",        
+            "url"  : ["embed http://www.beritasatu.com/_streaming3.html"],
+            "logo" : fs+"image/beritasatu.jpg",
+            "desc" : "BeritaSatu (sebelumnya bernama QTV dan Q Channel) adalah saluran televisi berita yang mengudara sejak tahun 1996. Saluran ini juga berguna sebagai saluran khusus untuk mengenai soal-soal keuangan dan informasi. Saluran ini hanya bisa disaksikan melalui satelit dan kabel dan juga siaran digital terestrial DVB-T2 yang bisa disaksikan via Set Top Box DVB-T2 atau Nexmedia. Target pemirsanya adalah kalangan menengah ke atas. Pemilik dan pendirinya adalah Peter F. Gontha."
+        },
+        {   
+            "id"   : "brtstSport",
+            "name" : "Berita Satu Sport",        
+            "url"  : ["embed http://www.beritasatu.com/_streaming4.html"],
             "logo" : fs+"image/beritasatu.jpg",
             "desc" : "BeritaSatu (sebelumnya bernama QTV dan Q Channel) adalah saluran televisi berita yang mengudara sejak tahun 1996. Saluran ini juga berguna sebagai saluran khusus untuk mengenai soal-soal keuangan dan informasi. Saluran ini hanya bisa disaksikan melalui satelit dan kabel dan juga siaran digital terestrial DVB-T2 yang bisa disaksikan via Set Top Box DVB-T2 atau Nexmedia. Target pemirsanya adalah kalangan menengah ke atas. Pemilik dan pendirinya adalah Peter F. Gontha."
         },
