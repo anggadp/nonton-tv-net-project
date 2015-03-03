@@ -158,7 +158,7 @@ $(document).ready(function(){
             "desc" : "Rajawali Televisi (disingkat RTV, sebelumnya bernama B-Channel) adalah sebuah stasiun televisi swasta terestrial nasional asal Jakarta, Indonesia yang dimilik perusahaan oleh Rajawali Corpora. RTV resmi mengudara pada tanggal 1 November 2009 di Jakarta dengan nama B-Channel. Saat ini, program RTV sendiri lebih difokuskan pada acara hiburan, soft news dan variety show untuk keluarga. Pada tanggal 3 Mei 2014, B-Channel berganti nama menjadi \"RTV (Rajawali Televisi)\" pada saat acara Grand Launching Langit Rajawali."
         },
         {   
-            "id"   : "beritasatuindo",
+            "id"   : "beritasatu_240p",
             "name" : "Berita Satu",        
             "url"  : ["rtmp://cdnjkt.mivo.tv/mivotvjkt/beritasatu_240p"],
             "logo" : fs+"image/beritasatu.jpg",
