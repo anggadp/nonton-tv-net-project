@@ -615,3 +615,10 @@ body {
     width: 482.5px;
     height: 96.5%;
 }
+
+/* GOOGLE SEARCH */
+
+.navbar-nav > li > a.goo-search{
+    max-width: 500px;
+    padding: 10px;
+}

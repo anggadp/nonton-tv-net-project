@@ -661,7 +661,7 @@ $(document).ready(function(){
             for (var svi=0; svi<svurl.length; svi++){
                 if (o[i]["id"]==='net' && svi == 0) var on = 'on'; else var on = '';
                 
-                if (o[i]["desc"]!=='') var des = o[i]["desc"]; else var des = o[i]["name"]+' is a TV channel specifically broadcast entertainment. Here the place to watch live streaming '+o[i]["name"]+' online smoothly and without long loading you can access without complicated with various problems of Internet bandwidth. You can watch the event live in accordance with the schedule of broadcast programs. This is one way of watching TV online is easiest via the Internet, especially for computer users either the PC or laptop and notebook which is already a commitment to provide comfort us most anticipated. Make sure the first Internet connection or bandwidth in a stable condition and has a speed that is appropriate standard because it will be very influential in the reception Streaming TV you are going to see.';
+                if (o[i]["desc"]!=='') var des = o[i]["desc"]; else var des = o[i]["name"]+' is a TV channel broadcast entertainment. It is the place to watch live streaming '+o[i]["name"]+' online smoothly and without buffering. You can access it without any interuption with various problems of Internet bandwidth. Furthermore, you can watch the event live accordance the schedule of broadcast programs. This is one the easiest way to watch TV online via Internet, especially for computer users which is can be accessible anywhere. All you need is stable and high speed internet connection, because it will be very helpful in Streaming TV  that you are going to watch.';
                 
                 SVR += '<span class="sv '+on+' clb-'+ct+'-'+i+'-'+svi+'">Server '+(svi+1)+'</span> ';
                 
@@ -758,4 +758,18 @@ $(document).ready(function(){
               }(document, 'script', 'facebook-jssdk'));
         });
         
+/* GOOGLE SEARCH */     
+
+  (function() {
+    var cx = '011850954543618672960:rnntlfzv3pc';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+  
+      
 });
