@@ -547,6 +547,10 @@ body {
     margin-top: 5px;
 }
 
+.channel-desc > span > h3 {
+    margin-top: 10px;
+}
+
 .live-traffic{
     position: fixed;
     top: 0;
