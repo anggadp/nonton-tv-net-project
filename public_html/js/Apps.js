@@ -30,7 +30,7 @@ $(document).ready(function(){
         return Sp[a];
     };
     
-    function VIDEOJS(file,image,title,id,sv,ds){
+    function VIDEOJS(file,image,title,id,sv,ds,st){
         if (id === '' || sv === '' || file === undefined){
             $('#player-area').empty().append('<span>Sorry, URL not valid.</span>');
         }else if (UrlFileSplit(file,0) === 'embed'){
@@ -52,7 +52,8 @@ $(document).ready(function(){
                 aboutlink: ""
             });
         }
-        $('title').html(function(){$(this).empty().append('Nonton TV Net - TV Online '+title);});
+        if (st != 0)
+            $('title').html(function(){$(this).empty().append(title+' - Nonton TV Net');});
         $('#tdesc h3').html(function(){$(this).empty().append(title);});
         $('#cdesc').html(function(){$(this).empty().append(ds);});
     };
@@ -62,7 +63,7 @@ $(document).ready(function(){
             success: function(){
                 $('.clb-'+ct+'-'+i+'-'+sv).click(function(){
                     window.history.pushState({ foo: "bar" },"", '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+sv));
-                    $('#'+id+'-'+sv).html(VIDEOJS(url,logo,name,id,sv,ds));
+                    $('#'+id+'-'+sv).html(VIDEOJS(url,logo,name,id,sv,ds,1));
                     $('.channel-list-box').removeClass('on');
                     $('.clb-'+ct+'-'+i).addClass('on');
                     $('.sv').removeClass('on');
@@ -673,7 +674,7 @@ $(document).ready(function(){
                     var ii = UrlSplitSecond(URLSplitUtama(1),1);
                     var j = UrlSplitSecond(URLSplitUtama(1),2);
                     if (ii == i && ct === h){
-                        VIDEOJS(svurl[j],o[i]["logo"],o[i]["name"],o[i]["id"],j,des);
+                        VIDEOJS(svurl[j],o[i]["logo"],o[i]["name"],o[i]["id"],j,des,1);
                     }
                 }
             }
@@ -691,7 +692,7 @@ $(document).ready(function(){
         $('.cl-'+ct).empty().append(CHANNELL);
         
         if (URLSplitUtama(1) === undefined){
-            VIDEOJS(cIND[0]["url"][0],cIND[0]["logo"],cIND[0]["name"],cIND[0]["id"],0,cIND[0]["desc"]);
+            VIDEOJS(cIND[0]["url"][0],cIND[0]["logo"],cIND[0]["name"],cIND[0]["id"],0,cIND[0]["desc"],0);
         } else {
             
             $('.channel-list-box').removeClass('on');
