@@ -52,6 +52,7 @@ $(document).ready(function(){
                 aboutlink: ""
             });
         }
+        $('title').html(function(){$(this).empty().append('Nonton TV Net - TV Online '+title);});
         $('#tdesc h3').html(function(){$(this).empty().append(title);});
         $('#cdesc').html(function(){$(this).empty().append(ds);});
     };
@@ -661,7 +662,7 @@ $(document).ready(function(){
             for (var svi=0; svi<svurl.length; svi++){
                 if (o[i]["id"]==='net' && svi == 0) var on = 'on'; else var on = '';
                 
-                if (o[i]["desc"]!=='') var des = o[i]["desc"]; else var des = o[i]["name"]+' is a TV channel broadcast entertainment. It is the place to watch live streaming '+o[i]["name"]+' online smoothly and without buffering. You can access it without any interuption with various problems of Internet bandwidth. Furthermore, you can watch the event live accordance the schedule of broadcast programs. This is one the easiest way to watch TV online via Internet, especially for computer users which is can be accessible anywhere. All you need is stable and high speed internet connection, because it will be very helpful in Streaming TV  that you are going to watch.';
+                if (o[i]["desc"]!=='') var des = o[i]["desc"]; else var des = o[i]["name"]+' is a TV channel broadcast entertainment. It is the place to watch live streaming '+o[i]["name"]+' online smoothly and without buffering. You can access it without any interuption with various problems of Internet bandwidth. Furthermore, you can watch the event live accordance the schedule of broadcast programs. This is one of the easiest way to watch TV online via Internet, especially for computer users which is can be accessible anywhere. All you need is stable and high speed internet connection, because it will be very helpful in Streaming TV  that you are going to watch.';
                 
                 SVR += '<span class="sv '+on+' clb-'+ct+'-'+i+'-'+svi+'">Server '+(svi+1)+'</span> ';
                 
