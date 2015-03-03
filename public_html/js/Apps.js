@@ -172,7 +172,7 @@ $(document).ready(function(){
             "desc" : "Kompas TV merupakan stasiun televisi swasta terestrial berjaringan di Indonesia. Kompas TV dimiliki oleh Kompas Gramedia. Stasiun televisi ini hadir menggantikan stasiun televisi yang pernah dimiliki oleh Kompas Gramedia, yaitu TV7. Sejak saham TV7 dibeli oleh pihak Trans Corp yang berdiri di bawah kepemimpinan Chairul Tanjung pada tahun 2006 dan nama TV7 diganti menjadi Trans7, maka saham Kompas Gramedia terhadap Trans7 menurun menjadi hampir setengah dari Trans Corp. Pada tanggal 11 September 2011, Kompas TV mengubah logonya yaitu dengan menghilangkan tulisan TV pada logo tersebut, dan tulisan TV tersebut kembali digunakan mulai 5 Oktober 2012 hingga sekarang."
         },
         {   
-            "id"   : "sindotv",
+            "id"   : "sindotvindo",
             "name" : "Sindo TV",        
             "url"  : ["embed http://embednontontvnet.blogspot.com/2015/03/sindotv.html","rtmp://edge.okeinfo.net/live/mncoke4_512.stream"],
             "logo" : fs+"image/sindotv.jpg",
