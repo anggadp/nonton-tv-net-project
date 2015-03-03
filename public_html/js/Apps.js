@@ -436,7 +436,7 @@ $(document).ready(function(){
             "name" : "JASMIN TV",        
             "url"  : ["rtmp://109.71.162.112:1935/live/sd.jasminchannel.stream"],
             "logo" : fs+"image/iconcopy400.png",
-            "desc" : "J"
+            "desc" : ""
         },
         {
             "id"   : "adult3",
