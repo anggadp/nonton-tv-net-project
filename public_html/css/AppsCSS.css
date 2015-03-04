@@ -27,6 +27,11 @@ body {
     padding: 0 40px;
 }
 
+.navbar-nav > li > .dropdown-menu {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .logo-nav,.footer-logo{
     background: url("https://nonton-tv-net-project.googlecode.com/git/public_html/image/imagespngcopy.png");
 }
