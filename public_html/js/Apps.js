@@ -53,8 +53,8 @@ $(document).ready(function(){
             });
         }
         if (st != 0)
-            $('title').html(function(){$(this).empty().append(title+' - Nonton TV Net');});
-        $('#tdesc h3').html(function(){$(this).empty().append(title);});
+            $('title').html(function(){$(this).empty().append(title+' - Ntvnet');});
+        $('#tdesc h3 .tit').html(function(){$(this).empty().append(title);});
         $('#cdesc').html(function(){$(this).empty().append(ds);});
     };
 
@@ -772,6 +772,21 @@ $(document).ready(function(){
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
   })();
+  
+/* WEB SEARCH */
+    
+    $('.wb-src-sl')
+        .change(function(){
+            $('.wb-src').removeClass('on');
+            $('.'+$('.wb-src-sl option:selected').val()).addClass('on');
+        });
+        
+/* ABOUT */
+    
+    $('.about')
+        .click(function(){
+            $('#myModalAbout').modal('show');
+        });
   
       
 });

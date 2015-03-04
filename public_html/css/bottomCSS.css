@@ -10,12 +10,14 @@
 
 .navbar-nav > li > div.goo-search{
     width: 100%;
-    padding: 10px;
+    padding: 10px 0;
+    margin-left: 0;
 }
 
 @media (min-width: 992px) {
     .navbar-nav > li > div.goo-search{
         width: 600px;
+        margin-left: 80px;
     }
 }
 
@@ -28,6 +30,10 @@
 .gsib_a{
     vertical-align: middle;
     padding: 0 5px;
+}
+
+td.gsib_a > input {
+    background-color:rgba(0, 0, 0, 0.5);
 }
 
 .gsc-search-box-tools .gsc-search-box input {
