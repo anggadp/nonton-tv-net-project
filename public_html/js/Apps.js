@@ -658,7 +658,7 @@ $(document).ready(function(){
                       url: fs+"json/c.json",
                       data : "",
                       dataType: "json",
-                      async: false
+                      async: true
                   });
         var o = JSON.parse(r.responseText);
         return o;
