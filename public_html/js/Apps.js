@@ -705,7 +705,7 @@ $(document).ready(function(){
             }
                 
             CHANNELL += '<div class="channel-list-box '+on+' clb-'+ct+'-'+i+'">'+
-                            '<div class="logo-img clb-'+ct+'-'+i+'-0"><img src="'+o[i]["logo"]+'" /></div>'+
+                            '<div class="logo-img clb-'+ct+'-'+i+'-0"><img src="'+fs+o[i]["logo"]+'" /></div>'+
                             '<div class="channel-list-desc">'+
                                 '<span class="nm clb-'+ct+'-'+i+'-0">'+o[i]["name"]+'</span><br>'+
                                 SVR+
