@@ -48,7 +48,7 @@ body {
   -webkit-box-shadow: none;
 	box-shadow: none;
   max-height: 51px;
-  z-index: 1032;
+  z-index: 1030;
 }
 .channel-list-box{
   position: relative;
@@ -165,7 +165,7 @@ body {
     background: #BD0202;
     padding: 0 2px;
     border-radius: 2px;
-    z-index: 1030;
+    z-index: 1029;
     color: #fff;
 }
 
@@ -448,7 +448,7 @@ body {
     padding-top: 10px;
     position: fixed;
     bottom: 0;
-    z-index: 1030;
+    z-index: 1029;
 }
 .footer-relative {
     position: relative;
@@ -671,21 +671,59 @@ body {
 /* WEB SEARCH NAVBAR */
 
 .navbar-nav > li > select.wb-src-sl{
-    margin: 11px -12px;
+    margin: 11px -2px;
 }
 
 .navbar-nav > li > input.wb-src {
-    margin-left: 80px;
-    width: 600px;
+    margin-left: 10px;
+    width: 100%;
     margin-right: 0;
+}
+
+@media (min-width: 992px){
+    .navbar-nav > li > input.wb-src {
+        margin-left: 80px;
+        width: 600px;
+    }
 }
 
 .wb-src {
     display: none;
+    float: left;
 }
 
 .wb-src.on{
-    display: inherit;
+    display: inline;
+}
+
+/* WEB SEARCH RESULT */
+
+#myModalNtvnetSearch > .modal-dialog{
+    width: 900px;
+    height: 80%;
+    margin: 40px auto;
+    overflow: auto
+}
+
+.box-src-rs{
+    height: 65px;
+    overflow: hidden;
+}
+
+.box-src-rs h4{
+    margin-bottom: 0px;
+}
+
+.box-src-rs h4 a {
+    color: #940F04;
+}
+
+.box-src-rs .lnk-rs {
+    color:green;
+}
+
+.box-src-rs p {
+    font-size: 12px;
 }
 
 /* ADS SIDEBAR */

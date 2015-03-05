@@ -1,81 +1,6 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-$(document).ready(function(){
-    var fs = "https://nonton-tv-net-project.googlecode.com/git/public_html/";
-    //var fs = "http://localhost/nontontvnetgithub/public_html/";
-    
-    var urlDelimiter = '?c=';
-    function URLSplitUtama(a){
-        var url = location.href;
-        var Split = url.split(urlDelimiter);
-        return Split[a];
-    };
-    
-    function utf8_to_b64( str ) {  //encode
-        return window.btoa(unescape(encodeURIComponent( str )));
-    };
-
-    function b64_to_utf8( str ) { //decode
-        return decodeURIComponent(escape(window.atob( str )));
-    };
-    
-    function UrlSplitSecond(url,a){
-        var Sp = b64_to_utf8(url).split('/');
-        return Sp[a];
-    };
-    
-    function UrlFileSplit(url,a){
-        var Sp = url.split(' ');
-        return Sp[a];
-    };
-    
-    function VIDEOJS(file,image,title,id,sv,ds,st){
-        if (id === '' || sv === '' || file === undefined){
-            $('#player-area').empty().append('<span>Sorry, URL not valid.</span>');
-        }else if (UrlFileSplit(file,0) === 'embed'){
-            var em = '<embed id="embedTV" src='+UrlFileSplit(file,1)+' >';
-            $('#player-area').empty().append(em);
-        } else {
-            $('#player-area').empty().append('<div id="'+id+'-'+sv+'"></div>');
-            jwplayer(id+'-'+sv).setup({
-                file : file,
-                image: fs+image,
-                title: title,
-                androidhls:true,
-                width: '100%',
-                height: '100%',
-                autostart: 'true',
-                repeat: 'true',
-                stretching: "exactfit",
-                abouttext:"",
-                aboutlink: ""
-            });
-        }
-        if (st != 0)
-            $('title').html(function(){$(this).empty().append(title+' - Nonton Tv Net');});
-        $('#tdesc h3 .tit').html(function(){$(this).empty().append(title);});
-        $('#cdesc').html(function(){$(this).empty().append(ds);});
-    };
-
-    function CLICKCHNELLIST(id,url,logo,name,i,ct,o,sv,ds){
-        $.ajax({
-            success: function(){
-                $('.clb-'+ct+'-'+i+'-'+sv).click(function(){
-                    window.history.pushState({ foo: "bar" },"", '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+sv));
-                    $('#'+id+'-'+sv).html(VIDEOJS(url,logo,name,id,sv,ds,1));
-                    $('.channel-list-box').removeClass('on');
-                    $('.clb-'+ct+'-'+i).addClass('on');
-                    $('.sv').removeClass('on');
-                    $('.clb-'+ct+'-'+i+'-'+sv).addClass('on');
-                });
-            }
-        });
-    };
-/*
-    var cIND =          
-    [   
+{ 
+"ind" : 
+    [
         {   
             "id"   : "net",
             "name" : "NET",        
@@ -188,9 +113,9 @@ $(document).ready(function(){
             "logo" : "image/LogoLPP-TVRI.png",
             "desc" : "Televisi Republik Indonesia (TVRI) adalah stasiun televisi pertama di Indonesia yang mengudara pada tanggal 24 Agustus 1962. Siaran perdananya menayangkan Upacara Peringatan Hari Kemerdekaan Republik Indonesia ke-17 dari Istana Negara Jakarta. Siarannya ini masih berupa hitam putih. TVRI kemudian meliput Asian Games yang diselenggarakan di Jakarta.\nDahulu TVRI pernah menayangkan iklan dalam satu tayangan khusus yang dengan judul acara Mana Suka Siaran Niaga (sehari dua kali). Sejak April tahun 1981 hingga akhir 90-an TVRI tidak diperbolehkan menayangkan iklan, dan akhirnya TVRI kembali menayangkan iklan. Status TVRI saat ini adalah Lembaga Penyiaran Publik. Sebagian biaya operasional TVRI masih ditanggung oleh negara.\nTVRI memonopoli siaran televisi di Indonesia sebelum tahun 1989 ketika didirikan televisi swasta pertama RCTI di Jakarta, dan SCTV pada tahun 1990 di Surabaya."
         }
-    ];
-    
-    var cMALAY =
+    ],
+
+"malay" :
     [
         {
             "id"   : "astroawani",
@@ -332,9 +257,9 @@ $(document).ready(function(){
             "logo" : "image/iconcopy400.png",
             "desc" : ""
         }
-    ];
-    
-    var cKOREA =
+    ],
+            
+"korea" :
     [
         {
             "id"   : "gtvhd",
@@ -399,9 +324,9 @@ $(document).ready(function(){
             "logo" : "image/korea.png",
             "desc" : ""
         }    
-    ];
-    
-    var cSPORT =
+    ],
+            
+"sport" :
     [
         {
             "id"   : "cctv5",
@@ -410,9 +335,9 @@ $(document).ready(function(){
             "logo" : "image/cctv5.png",
             "desc" : ""
         }
-    ];
-    
-    var cKID =
+    ],
+            
+"kid"   :
     [
         {   
             "id"   : "spacetoon",
@@ -421,9 +346,9 @@ $(document).ready(function(){
             "logo" : "image/spacetoon.png",
             "desc" : ""
         }
-    ];
-    
-    var cADULT =
+    ],
+            
+"adult" :
     [
         {
             "id"   : "adult1",
@@ -628,9 +553,9 @@ $(document).ready(function(){
             "logo" : "image/iconcopy400.png",
             "desc" : ""
         }       
-    ];
-    
-    var cSOCCER =   
+    ],
+            
+"soccer" :
     [   
         {   
             "id"   : "soccer1",
@@ -639,9 +564,9 @@ $(document).ready(function(){
             "logo" : "image/soccerpng.png",
             "desc" : ""
         }
-    ];
-    
-    var cOTHER =   
+    ],
+            
+"other" :
     [   
         {   
             "id"   : "other",
@@ -650,232 +575,5 @@ $(document).ready(function(){
             "logo" : "image/iconcopy400.png",
             "desc" : ""
         }
-    ];
-  */ 
-    function GETCJSON(){
-       var r = $.ajax({
-                      type: "GET",
-                      url: fs+"json/c.json",
-                      data : "",
-                      dataType: "json",
-                      async: false
-                  });
-        var o = JSON.parse(r.responseText);
-        return o;
-    };
-    
-    var cALL = GETCJSON();
-    for (var z in cALL){
-        CNLL(cALL[z],z);
-    }
-    
-    function CNLL(o,ct){
-        var CHANNELL = '';
-        
-        for (var i=0; i<o.length; i++)
-        { 
-            if (o[i]["id"]==='net') var on = 'on'; else var on = '';
-            var SVR = '';
-            var svurl = o[i]["url"];
-            
-            for (var svi=0; svi<svurl.length; svi++){
-                if (o[i]["id"]==='net' && svi == 0) var on = 'on'; else var on = '';
-                
-                if (o[i]["desc"]!=='') var des = o[i]["desc"]; else var des = o[i]["name"]+' is a TV channel broadcast entertainment. It is the place to watch live streaming '+o[i]["name"]+' online smoothly and without buffering. You can access it without any interuption with various problems of Internet bandwidth. Furthermore, you can watch the event live accordance the schedule of broadcast programs. This is one of the easiest way to watch TV online via Internet, especially for computer users which is can be accessible anywhere. All you need is stable and high speed internet connection, because it will be very helpful in Streaming TV  that you are going to watch.';
-                
-                SVR += '<span class="sv '+on+' clb-'+ct+'-'+i+'-'+svi+'">Server '+(svi+1)+'</span> ';
-                
-                CLICKCHNELLIST(o[i]["id"],svurl[svi],o[i]["logo"],o[i]["name"],i,ct,o,svi,des);
-                
-                if (URLSplitUtama(1) !== undefined){
-                    var h = UrlSplitSecond(URLSplitUtama(1),0);
-                    var ii = UrlSplitSecond(URLSplitUtama(1),1);
-                    var j = UrlSplitSecond(URLSplitUtama(1),2);
-                    if (ii == i && ct === h){
-                        VIDEOJS(svurl[j],o[i]["logo"],o[i]["name"],o[i]["id"],j,des,1);
-                    }
-                }
-            }
-                
-            CHANNELL += '<div class="channel-list-box '+on+' clb-'+ct+'-'+i+'">'+
-                            '<div class="logo-img clb-'+ct+'-'+i+'-0"><img src="'+o[i]["logo"]+'" /></div>'+
-                            '<div class="channel-list-desc">'+
-                                '<span class="nm clb-'+ct+'-'+i+'-0">'+o[i]["name"]+'</span><br>'+
-                                SVR+
-                            '</div>'+
-                            '<div class="click-area clb-'+ct+'-'+i+'-0"></div>'+
-                        '</div>';
-                
-        }
-        $('.cl-'+ct).empty().append(CHANNELL);
-        
-        if (URLSplitUtama(1) === undefined){
-            VIDEOJS(cALL["ind"][0]["url"][0],cALL["ind"][0]["logo"],cALL["ind"][0]["name"],cALL["ind"][0]["id"],0,cALL["ind"][0]["desc"],0);
-        } else {
-            
-            $('.channel-list-box').removeClass('on');
-            $('.clb-'+h+'-'+ii).addClass('on');
-            $('.sv').removeClass('on');
-            $('.clb-'+h+'-'+ii+'-'+j).addClass('on');
-            $('#myTab li').removeClass('active');
-            $('.'+h+'tv').addClass('active');
-            $('#myTabContentChannel .tab-pane').removeClass('active');
-            $('#myTabContentChannel #'+h+'tv').addClass('active');
-        }
-    };
-    
-    $('.adulttv').click(function(){ 
-        if ($('.adulttv').data('xyz') === 0){ $(this).data('xyz','1'); $('#myModal18').modal('show'); }  
-    });
-    /*
-    var ChannelArray = {
-            "ind"   : cIND, 
-            "malay" : cMALAY, 
-            "korea" : cKOREA, 
-            "sport" : cSPORT, 
-            "kid"   : cKID,
-            "adult" : cADULT,
-            "soccer": cSOCCER,
-            "other" : cOTHER
-        };
-    for (var z in ChannelArray)
-    {
-        CNLL(ChannelArray[z],z);
-    };
-    */
-    
-/* FIXED SCROLLBAR */
-
-    window.onscroll = changePosOnScroll;     
-    
-    function changePosOnScroll() { //footer
-        if (window.pageYOffset > 50) {
-            $('.footer').addClass('footer-relative');
-        } else {
-            $('.footer').removeClass('footer-relative');
-        };
-    };
-
-/* LIVE TRAFFIC FEED */
-
-    $('.traffic')
-        .click(function(){
-            if ($('.live-traffic').css('left')==='-1900px')
-                $('.live-traffic').css('left','0');
-            else
-                $('.live-traffic').css('left','-1900px');
-        });
-    $('.btn-close-traffic')
-        .click(function(){
-            $('.live-traffic').css('left','-1900px');
-        });
-        
-/* SEND FEEDBACK */
-        
-    $('.feedback')
-        .click(function(){
-            $('#myModalFeedback').modal('show');
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-                fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));
-        });
-        
-/* GOOGLE SEARCH */     
-
-  (function() {
-    var cx = '011850954543618672960:rnntlfzv3pc';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-  
-/* WEB SEARCH */
-    
-    $('.wb-src-sl')
-        .change(function(){
-            $('.wb-src').removeClass('on');
-            $('.'+$('.wb-src-sl option:selected').val()).addClass('on');
-        });
-        
-/* ABOUT */
-    
-    $('.about')
-        .click(function(){
-            $('#myModalAbout').modal('show');
-        });
-        
-/* Ntvnet SEARCH */
-
-    function NTVNETSEARCH(o,ct,q){
-        var qu  = q.toUpperCase();
-        var qs = qu.split(' ');  
-        for (var i=0; i<o.length; i++)
-        { 
-            var id  = o[i]["id"].toUpperCase();
-            var nm  = o[i]["name"].toUpperCase();
-            var dc  = o[i]["desc"].toUpperCase();
-            
-            for (var iq=0; iq<qs.length; iq++)
-                {
-                    if (id.indexOf(qu) >= 0 || nm.indexOf(qu) >= 0 || dc.indexOf(qu) >= 0 || id.indexOf(qs[iq]) >= 0 || nm.indexOf(qs[iq]) >= 0 || dc.indexOf(qs[iq]) >= 0){
-                        var r = '<div class="box-src-rs">'+
-                                    '<h4><a class="tit-rs-'+i+'" href="'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0)+'">'+o[i]["name"]+'</a></h4>'+
-                                    '<span class="lnk-rs">'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0)+'</span>'+
-                                    '<p>'+o[i]["desc"]+'</p>'+
-                                '</div>';
-                        $('#ntvnetSrcResult').append(r);
-                        $('.tit-rs-'+i).click(function(){
-                            //window.location.href = '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0);
-                            window.open('//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0));
-                        });
-                    }
-                    console.log('test loop');
-                }    
-        }
-    };
-   
-    $('.ntvnet-search')
-        .keydown(function (event) {
-            var keypressed = event.keyCode || event.which;
-            if (keypressed == 13 && !event.shiftKey) {
-                $('#myModalNtvnetSearch').modal('show');
-                $('#ntvnetSrcResult').empty().append('');
-                var q = $(this).val();
-                for (var z in cALL)
-                {
-                    NTVNETSEARCH(cALL[z],z,q);
-                };
-                $(this).val('');
-            }
-        });
-        
-/* CLOCK */
-    
-    function startTime() {
-        var today=new Date();
-        var h=today.getHours();
-        var m=today.getMinutes();
-        var s=today.getSeconds();
-        h = checkTime(h);
-        m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById('clock').innerHTML = h+":"+m+":"+s;
-        var t = setTimeout(function(){startTime();},500);
-    }
-
-    function checkTime(i) {
-        if (i<10) {i = "0" + i;};  // add zero in front of numbers < 10
-        return i;
-    }
-    
-    startTime();
-  
-});
+    ]
+}
