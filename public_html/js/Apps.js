@@ -734,22 +734,6 @@ $(document).ready(function(){
     $('.adulttv').click(function(){ 
         if ($('.adulttv').data('xyz') === 0){ $(this).data('xyz','1'); $('#myModal18').modal('show'); }  
     });
-    /*
-    var ChannelArray = {
-            "ind"   : cIND, 
-            "malay" : cMALAY, 
-            "korea" : cKOREA, 
-            "sport" : cSPORT, 
-            "kid"   : cKID,
-            "adult" : cADULT,
-            "soccer": cSOCCER,
-            "other" : cOTHER
-        };
-    for (var z in ChannelArray)
-    {
-        CNLL(ChannelArray[z],z);
-    };
-    */
     
 /* FIXED SCROLLBAR */
 
@@ -841,7 +825,7 @@ $(document).ready(function(){
                         $('#ntvnetSrcResult').append(r);
                         $('.tit-rs-'+i).click(function(){
                             //window.location.href = '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0);
-                            window.open('//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0));
+                            window.open('//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+'0'));
                         });
                     }
                     console.log('test loop');
