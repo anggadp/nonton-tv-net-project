@@ -868,5 +868,19 @@ $(document).ready(function(){
     }
     
     startTime();
+    
+/* PRIVACY */
+
+    $('.privacy')
+        .click(function(){
+            $('#myModalPrivacy').modal('show');
+        });
+        
+/* POLICY & SAFETY */
+
+    $('.policysafety')
+        .click(function(){
+            $('#myModalPolicySafety').modal('show');
+        });
   
 });
