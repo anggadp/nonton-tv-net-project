@@ -574,7 +574,7 @@ body {
 .channel-desc{
     background: #ffffff;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 0;
     float: left;
 }
 
@@ -732,6 +732,7 @@ body {
     float: left;
     overflow: hidden;
     max-height: 90px;
+    margin-bottom: 10px;
     display: none;
 }
 
