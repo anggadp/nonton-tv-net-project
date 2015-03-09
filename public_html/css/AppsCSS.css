@@ -522,6 +522,8 @@ body {
 .alert-view{
     height: 90px;
     overflow-y: auto;
+    float: left;
+    margin-bottom: 10px;
 }
 .alert-view::-webkit-scrollbar { width: 5px; } 
 .alert-view::-webkit-scrollbar-track { background-color: transparent; border-radius: 0px; width: 0px; }
@@ -737,7 +739,7 @@ body {
 }
 
 .ads-sidebar{
-    margin-top: 10px;
+    margin-bottom: 10px;
     float: left;
     background: #fff;
     width: 100%;

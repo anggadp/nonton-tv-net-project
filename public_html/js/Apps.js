@@ -818,8 +818,8 @@ $(document).ready(function(){
                 {
                     if (id.indexOf(qu) >= 0 || nm.indexOf(qu) >= 0 || dc.indexOf(qu) >= 0 || id.indexOf(qs[iq]) >= 0 || nm.indexOf(qs[iq]) >= 0 || dc.indexOf(qs[iq]) >= 0){
                         var r = '<div class="box-src-rs">'+
-                                    '<h4><a class="tit-rs-'+i+'" href="'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0)+'">'+o[i]["name"]+'</a></h4>'+
-                                    '<span class="lnk-rs">'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0)+'</span>'+
+                                    '<h4><a class="tit-rs-'+i+'" href="'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+'0')+'">'+o[i]["name"]+'</a></h4>'+
+                                    '<span class="lnk-rs">'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+'0')+'</span>'+
                                     '<p>'+o[i]["desc"]+'</p>'+
                                 '</div>';
                         $('#ntvnetSrcResult').append(r);
