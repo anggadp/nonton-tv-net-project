@@ -892,5 +892,5 @@ $(document).ready(function(){
 
     ga('create', 'UA-60504479-1', 'auto');
     ga('send', 'pageview');
-  
+
 });
