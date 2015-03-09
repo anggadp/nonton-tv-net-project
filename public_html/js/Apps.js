@@ -817,15 +817,16 @@ $(document).ready(function(){
             for (var iq=0; iq<qs.length; iq++)
                 {
                     if (id.indexOf(qu) >= 0 || nm.indexOf(qu) >= 0 || dc.indexOf(qu) >= 0 || id.indexOf(qs[iq]) >= 0 || nm.indexOf(qs[iq]) >= 0 || dc.indexOf(qs[iq]) >= 0){
+                        var u = '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+'0');
                         var r = '<div class="box-src-rs">'+
-                                    '<h4><a class="tit-rs-'+i+'" href="'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+'0')+'">'+o[i]["name"]+'</a></h4>'+
-                                    '<span class="lnk-rs">'+'//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+'0')+'</span>'+
+                                    '<h4><a class="tit-rs-'+i+'" href="'+u+'">'+o[i]["name"]+'</a></h4>'+
+                                    '<span class="lnk-rs">'+u+'</span>'+
                                     '<p>'+o[i]["desc"]+'</p>'+
                                 '</div>';
                         $('#ntvnetSrcResult').append(r);
                         $('.tit-rs-'+i).click(function(){
-                            //window.location.href = '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+0);
-                            window.open('//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+i+'/'+'0'));
+                            //window.location.href = u;
+                            window.open(u);
                         });
                     }
                     console.log('test loop');
