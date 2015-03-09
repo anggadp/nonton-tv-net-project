@@ -824,16 +824,6 @@ $(document).ready(function(){
                                     '<p>'+o[i]["desc"]+'</p>'+
                                 '</div>';
                         $('#ntvnetSrcResult').append(r);
-                        /*
-                        $.ajax({
-                            success : function(){
-                                $('.tit-rs-'+i+'-'+iq).click(function(){
-                                    //window.location.href = u;
-                                    window.open(u);
-                                });
-                            }
-                        });
-                    */
                     }
                     console.log('test loop');
                 }    
