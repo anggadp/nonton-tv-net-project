@@ -717,9 +717,10 @@ $(document).ready(function(){
         $('.cl-'+ct).empty().append(CHANNELL);
         
         if (URLSplitUtama(1) === undefined){
-            VIDEOJS(cALL["ind"][0]["url"][0],cALL["ind"][0]["logo"],cALL["ind"][0]["name"],cALL["ind"][0]["id"],0,cALL["ind"][0]["desc"],0);
+            //VIDEOJS(cALL["ind"][0]["url"][0],cALL["ind"][0]["logo"],cALL["ind"][0]["name"],cALL["ind"][0]["id"],0,cALL["ind"][0]["desc"],0);
+            $('.homepage').addClass('on');
         } else {
-            
+            $('.contentpage').addClass('on');
             $('.channel-list-box').removeClass('on');
             $('.clb-'+h+'-'+ii).addClass('on');
             $('.sv').removeClass('on');
@@ -889,5 +890,58 @@ $(document).ready(function(){
 
     ga('create', 'UA-60504479-1', 'auto');
     ga('send', 'pageview');
+    
+/* HOME PAGE */
+
+    $('.homepage')
+        .html(function(){
+            var s = '';
+            for (var z in cALL){
+                if (z !== 'adult'){
+                    s +=    '<div class="hp-cnl-list-box hp-cnl-list-box-'+z+'">'+
+                                '<div class="clb-cat-nm"><h5>'+z+'</h5><a class="sw-all sw-all-'+z+'"></a></div>'+
+                                CNLITEMHM(cALL[z],z)+
+                            '</div>';
+                }
+            }
+            $('.hp-cnl-list').empty().append(s);
+        });
+        
+    function SHOWALLCNLHM(z){
+        $.ajax({
+            success: function(){
+                $('.sw-all-'+z)
+                    .empty().append('Show more')
+                    .click(function(){
+                        if ($('.hp-cnl-list-box-'+z).css('max-height') === '10000px'){
+                            $(this).empty().append('Show more');
+                            $('.hp-cnl-list-box-'+z).removeClass('open');
+                        } else {
+                            $('.hp-cnl-list-box-'+z).addClass('open');
+                            $(this).empty().append('Show less');
+                        }
+                    });
+            }
+        });
+    };    
+    
+    function CNLITEMHM(o,ct){
+        var t = '';
+        for (var j=0; j<o.length; j++){
+            var u = '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+j+'/'+'0');
+            t   +=  '<div class="cnl-list-cnt">'+
+                        '<div class="clc-img" data-hr="'+u+'" onclick="window.location.href = \''+u+'\'; return false;">'+
+                            '<img src="'+fs+o[j]['logo']+'"/>'+
+                        '</div>'+
+                        '<a class="clc-nm" href="'+u+'">'+o[j]['name']+'</a>'+
+                    '</div>';
+            if (o.length > 4)
+                SHOWALLCNLHM(ct);
+        }
+        return t;
+        
+    };  
+
+    
 
 });
