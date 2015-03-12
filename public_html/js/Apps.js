@@ -927,6 +927,7 @@ $(document).ready(function(){
     };    
     
     function CNLITEMHM(o,ct){
+        SHOWALLCNLHM(ct,o.length);
         var t = '';
         for (var j=0; j<o.length; j++){
             var u = '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+j+'/'+'0');
@@ -937,7 +938,6 @@ $(document).ready(function(){
                         '<a class="clc-nm" href="'+u+'">'+o[j]['name']+'</a>'+
                     '</div>';
         }
-        SHOWALLCNLHM(ct,o.length);
         return t;
         
     };  
