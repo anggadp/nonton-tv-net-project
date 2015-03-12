@@ -851,6 +851,12 @@ body {
     width: 100%;
 }
 
+.homepage > .hp-sidebar{
+    float: left;
+    position: relative;
+    min-width: 27%;
+}
+
 /* PAGE ACTION */
 
 .pageaction{
@@ -868,7 +874,8 @@ body {
     position: relative;
     background: #fff;
     padding: 10px;
-    min-width: 27%;
-    min-height: 400px;
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 10px;
 }
 
