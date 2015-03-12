@@ -908,7 +908,8 @@ $(document).ready(function(){
         });
         
     function SHOWALLCNLHM(z,o){
-       
+        $.ajax({
+            success: function(){
                 if (o < 5)
                     $('.sw-all-'+z).empty().append('');
                 $('.sw-all-'+z)
@@ -921,7 +922,8 @@ $(document).ready(function(){
                             $(this).empty().append('Show less');
                         }
                     });
-            
+            }
+        });
     };    
     
     function CNLITEMHM(o,ct){
