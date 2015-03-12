@@ -899,9 +899,10 @@ $(document).ready(function(){
             for (var z in cALL){
                 if (z !== 'adult'){
                     s +=    '<div class="hp-cnl-list-box hp-cnl-list-box-'+z+'">'+
-                                '<div class="clb-cat-nm"><h5>'+z+'</h5><a class="sw-all sw-all-'+z+'">Show more</a></div>'+
+                                '<div class="clb-cat-nm"><h5>'+z+'</h5><a class="sw-all sw-all-'+z+'">Loading..</a></div>'+
                                 CNLITEMHM(cALL[z],z)+
                             '</div>';
+                    SHOWALLCNLHM(z,cALL[z].length);
                 }
             }
             $('.hp-cnl-list').empty().append(s);
@@ -912,6 +913,8 @@ $(document).ready(function(){
             success: function(){
                 if (o < 5)
                     $('.sw-all-'+z).empty().append('');
+                else 
+                    $('.sw-all-'+z).empty().append('Show more');
                 $('.sw-all-'+z)
                     .click(function(){
                         if ($('.hp-cnl-list-box-'+z).css('max-height') === '10000px'){
@@ -927,7 +930,6 @@ $(document).ready(function(){
     };    
     
     function CNLITEMHM(o,ct){
-        SHOWALLCNLHM(ct,o.length);
         var t = '';
         for (var j=0; j<o.length; j++){
             var u = '//'+document.domain+urlDelimiter+utf8_to_b64(ct+'/'+j+'/'+'0');
