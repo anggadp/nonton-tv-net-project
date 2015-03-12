@@ -911,20 +911,21 @@ $(document).ready(function(){
     function SHOWALLCNLHM(z,o){
         $.ajax({
             success: function(){
-                if (o < 5)
+                if (o < 5){
                     $('.sw-all-'+z).empty().append('');
-                else 
+                } else { 
                     $('.sw-all-'+z).empty().append('Show more');
-                $('.sw-all-'+z)
-                    .click(function(){
-                        if ($('.hp-cnl-list-box-'+z).css('max-height') === '10000px'){
-                            $(this).empty().append('Show more');
-                            $('.hp-cnl-list-box-'+z).removeClass('open');
-                        } else {
-                            $('.hp-cnl-list-box-'+z).addClass('open');
-                            $(this).empty().append('Show less');
-                        }
-                    });
+                    $('.sw-all-'+z)
+                        .click(function(){
+                            if ($('.hp-cnl-list-box-'+z).css('max-height') === '10000px'){
+                                $(this).empty().append('Show more');
+                                $('.hp-cnl-list-box-'+z).removeClass('open');
+                            } else {
+                                $('.hp-cnl-list-box-'+z).addClass('open');
+                                $(this).empty().append('Show less');
+                            }
+                        });
+                }
             }
         });
     };    
