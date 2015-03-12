@@ -935,9 +935,9 @@ $(document).ready(function(){
                         '</div>'+
                         '<a class="clc-nm" href="'+u+'">'+o[j]['name']+'</a>'+
                     '</div>';
-            if (o.length > 4)
-                SHOWALLCNLHM(ct);
         }
+        if (o.length > 4)
+                SHOWALLCNLHM(ct);
         return t;
         
     };  
