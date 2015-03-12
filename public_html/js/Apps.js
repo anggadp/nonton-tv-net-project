@@ -899,7 +899,7 @@ $(document).ready(function(){
             for (var z in cALL){
                 if (z !== 'adult'){
                     s +=    '<div class="hp-cnl-list-box hp-cnl-list-box-'+z+'">'+
-                                '<div class="clb-cat-nm"><h5>'+z+'</h5><a class="sw-all sw-all-'+z+'"></a></div>'+
+                                '<div class="clb-cat-nm"><h5>'+z+'</h5><a class="sw-all sw-all-'+z+'">Show more</a></div>'+
                                 CNLITEMHM(cALL[z],z)+
                             '</div>';
                 }
@@ -907,11 +907,12 @@ $(document).ready(function(){
             $('.hp-cnl-list').empty().append(s);
         });
         
-    function SHOWALLCNLHM(z){
+    function SHOWALLCNLHM(z,o){
         $.ajax({
             success: function(){
+                if (o < 5)
+                    $('.sw-all-'+z).empty().append('');
                 $('.sw-all-'+z)
-                    .empty().append('Show more')
                     .click(function(){
                         if ($('.hp-cnl-list-box-'+z).css('max-height') === '10000px'){
                             $(this).empty().append('Show more');
@@ -936,8 +937,7 @@ $(document).ready(function(){
                         '<a class="clc-nm" href="'+u+'">'+o[j]['name']+'</a>'+
                     '</div>';
         }
-        if (o.length > 4)
-                SHOWALLCNLHM(ct);
+        SHOWALLCNLHM(ct,o.length);
         return t;
         
     };  
