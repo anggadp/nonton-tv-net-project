@@ -895,17 +895,17 @@ $(document).ready(function(){
 
     $('.homepage')
         .html(function(){
-            var s = '';
+            //var s = '';
             for (var z in cALL){
                 if (z !== 'adult'){
-                    s +=    '<div class="hp-cnl-list-box hp-cnl-list-box-'+z+'">'+
+                    var s =    '<div class="hp-cnl-list-box hp-cnl-list-box-'+z+'">'+
                                 '<div class="clb-cat-nm"><h5>'+z+'</h5><a class="sw-all sw-all-'+z+'">Loading..</a></div>'+
                                 CNLITEMHM(cALL[z],z)+
                             '</div>';
-                    SHOWALLCNLHM(z,cALL[z].length);
+                    $('.hp-cnl-list').append(s);
+                    SHOWALLCNLHM(z,cALL[z].length);       
                 }
             }
-            $('.hp-cnl-list').empty().append(s);
         });
         
     function SHOWALLCNLHM(z,o){
