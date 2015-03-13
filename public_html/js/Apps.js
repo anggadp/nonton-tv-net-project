@@ -32,6 +32,11 @@ $(document).ready(function(){
     };
     
     function VIDEOJS(file,image,title,id,sv,ds,st){
+        if (st != 0)
+            $('title').html(function(){$(this).empty().append(title+' - Nonton Tv Net');});
+        $('#tdesc h3 .tit').html(function(){$(this).empty().append(title);});
+        $('#cdesc').html(function(){$(this).empty().append(ds);});
+        
         if (id === '' || sv === '' || file === undefined){
             $('#player-area').empty().append('<span>Sorry, URL not valid.</span>');
         }else if (UrlFileSplit(file,0) === 'embed'){
@@ -53,10 +58,7 @@ $(document).ready(function(){
                 aboutlink: ""
             });
         }
-        if (st != 0)
-            $('title').html(function(){$(this).empty().append(title+' - Nonton Tv Net');});
-        $('#tdesc h3 .tit').html(function(){$(this).empty().append(title);});
-        $('#cdesc').html(function(){$(this).empty().append(ds);});
+        
     };
 
     function CLICKCHNELLIST(id,url,logo,name,i,ct,o,sv,ds){
