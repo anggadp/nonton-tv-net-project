@@ -909,8 +909,8 @@ $(document).ready(function(){
         });
         
     function SHOWALLCNLHM(z,o){
-        $.ajax({
-            success: function(){
+        //$.ajax({
+          //  success: function(){
                 if (o < 5){
                     $('.sw-all-'+z).empty().append('');
                 } else { 
@@ -926,8 +926,8 @@ $(document).ready(function(){
                             }
                         });
                 }
-            }
-        });
+            //}
+        //});
     };    
     
     function CNLITEMHM(o,ct){
