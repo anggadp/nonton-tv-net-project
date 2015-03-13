@@ -10,7 +10,7 @@
 
 .navbar-nav > li > div.goo-search{
     width: 100%;
-    padding: 10px 0;
+    padding: 11px 0;
     margin-left: 0;
 }
 
@@ -24,7 +24,8 @@
 .cse .gsc-control-cse,.gsc-control-cse {
     padding: 0em;
     width: auto;
-    height: 30px;
+    height: 28px;
+    border: none;
 }
 
 .gsib_a{
