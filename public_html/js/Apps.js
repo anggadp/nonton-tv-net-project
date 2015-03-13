@@ -3,8 +3,8 @@
  * and open the template in the editor.
  */
 $(document).ready(function(){
-    //var fs = "https://nonton-tv-net-project.googlecode.com/git/public_html/";
-    var fs = "http://localhost/nontontvnetgithub/public_html/";
+    var fs = "https://nonton-tv-net-project.googlecode.com/git/public_html/";
+    //var fs = "http://localhost/nontontvnetgithub/public_html/";
     
     var urlDelimiter = '?c=';
     function URLSplitUtama(a){
