@@ -895,10 +895,9 @@ $(document).ready(function(){
 
     $('.homepage')
         .html(function(){
-            //var s = '';
             for (var z in cALL){
                 if (z !== 'adult'){
-                    var s =    '<div class="hp-cnl-list-box hp-cnl-list-box-'+z+'">'+
+                    var s = '<div class="hp-cnl-list-box hp-cnl-list-box-'+z+'">'+
                                 '<div class="clb-cat-nm"><h5>'+z+'</h5><a class="sw-all sw-all-'+z+'">Loading..</a></div>'+
                                 CNLITEMHM(cALL[z],z)+
                             '</div>';
@@ -909,25 +908,21 @@ $(document).ready(function(){
         });
         
     function SHOWALLCNLHM(z,o){
-        //$.ajax({
-          //  success: function(){
-                if (o < 5){
-                    $('.sw-all-'+z).empty().append('');
-                } else { 
-                    $('.sw-all-'+z).empty().append('Show more');
-                    $('.sw-all-'+z)
-                        .click(function(){
-                            if ($('.hp-cnl-list-box-'+z).css('max-height') === '10000px'){
-                                $(this).empty().append('Show more');
-                                $('.hp-cnl-list-box-'+z).removeClass('open');
-                            } else {
-                                $('.hp-cnl-list-box-'+z).addClass('open');
-                                $(this).empty().append('Show less');
-                            }
-                        });
-                }
-            //}
-        //});
+        if (o < 5){
+            $('.sw-all-'+z).empty().append('');
+        } else { 
+            $('.sw-all-'+z).empty().append('Show more');
+            $('.sw-all-'+z)
+                .click(function(){
+                    if ($('.hp-cnl-list-box-'+z).css('max-height') === '10000px'){
+                        $(this).empty().append('Show more');
+                        $('.hp-cnl-list-box-'+z).removeClass('open');
+                    } else {
+                        $('.hp-cnl-list-box-'+z).addClass('open');
+                        $(this).empty().append('Show less');
+                    }
+                });
+        }
     };    
     
     function CNLITEMHM(o,ct){
