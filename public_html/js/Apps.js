@@ -221,7 +221,7 @@ $(document).ready(function(){
             {
                 "id"   : "malaytv3",
                 "name" : "TV3",        
-                "url"  : ["embed http://embednontontvnet.blogspot.com/2015/02/tv3malayinternational.html","embed http://embednontontvnet.blogspot.com/2015/02/tv3malay2.html"],
+                "url"  : ["embed http://embednontontvnet.blogspot.com/2015/02/tv3malay2.html","embed http://embednontontvnet.blogspot.com/2015/02/tv3malayinternational.html"],
                 "logo" : "image/tv3malay.png",
                 "desc" : "TV3 is a Malaysian private television station owned and operated by the Media Prima Berhad, a Malaysian conglomerate. It began broadcasting on 1 June 1984. Now it broadcasts 24 hours a day, though, in September 2014, this channel broadcasts between 6:30 a.m. until 2:30 a.m. due to low audience ratings outside this time.\nIn 2013, TV3 remained the most watched television station in Malaysia, despite the declining viewership of free-to-air television, due to the high penetration of Pay TV and the further roll-out of free-to-air digital television.\nSimilar to most television stations in Southeast Asia, TV3 is known for its soap operas."
             },
